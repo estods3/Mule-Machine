@@ -1,0 +1,92 @@
+Data Expoted from: /home/estods/EAGLE/projects/MM_prod_v1/mulemachinePCB_withLEDs.sch
+with: /home/estods/Downloads/eagle-9.6.2/examples/ulps/examples/statistic-sch.ulp
+at: 11/8/21 5:13 PM
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+used layers 6
+
+91 Nets
+93 Pins
+94 Symbols
+95 Names
+96 Values
+99 SpiceOrder
+_________________________
+
+
+
+
+============================
+
+----------------------------
+LAYER
+Nb.	Name	Used
+ 88	SimResults	0
+ 89	SimProbes	0
+ 90	Modules	0
+ 91	Nets	1
+ 92	Busses	0
+ 93	Pins	1
+ 94	Symbols	1
+ 95	Names	1
+ 96	Values	1
+ 97	Info	0
+ 98	Guide	0
+ 99	SpiceOrder	1
+
+----------------------------
+CLASS
+# - Name	min. Width	Clearance	min. Drill	Used
+0 - default	0.3048 	0.2540 	0.5080 	23  
+1 - Power	0.5080 	0.2540 	0.5080 	2   
+
+
+----------------------------
+LIBRARY	Quant.
+capacitor-wima	3   
+diode	3   
+v-reg	1   
+atmel	1   
+con-jack	1   
+led	3   
+supply1	4   
+special	1   
+rcl	7   
+switch	1   
+supply2	7   
+con-lsta	1   
+transistor	3   
+con-subd	1   
+
+PACKAGE	Quant.
+C2.5-3	3   
+DO41-10	3   
+TO220L1	1   
+DIL28-3	1   
+DCJ0202	1   
+LED5MM	3   
+QS	1   
+0204/7	7   
+RDT1034	1   
+FE05-1	1   
+TO92-CBE	3   
+F09HP	1   
+
+DEVICE	Quant.
+C2,5-3	3   
+1N4004	3   
+LD117AV50	1   
+MEGA8-P	1   
+DCJ0202	1   
+LED5MM	3   
+XTAL/S	1   
+R-US_0204/7	7   
+RDT1034	1   
+FE05-1	1   
+MPS2222A-NPN-TO92-CBE	3   
+F09HP	1   
+
+
+----------------------------
+
+End report

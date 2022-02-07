@@ -1,0 +1,38 @@
+Partlist
+
+Exported from mulemachinePCB_withLEDs.sch at 2/1/22 5:24 PM
+
+EAGLE Version 9.6.2 Copyright (c) 1988-2020 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value          Device                Package  Library        Sheet
+
+C1       470uF          C2,5-3                C2.5-3   capacitor-wima 1
+C2       22pF           C2,5-3                C2.5-3   capacitor-wima 1
+C3       22pF           C2,5-3                C2.5-3   capacitor-wima 1
+D1       1N4004         1N4004                DO41-10  diode          1
+D2       1N4004         1N4004                DO41-10  diode          1
+D3       1N4004         1N4004                DO41-10  diode          1
+IC1      LD117AV50      LD117AV50             TO220L1  v-reg          1
+IC2      MEGA8-P        MEGA8-P               DIL28-3  atmel          1
+J1       DCJ0202        DCJ0202               DCJ0202  con-jack       1
+LED1                    LED5MM                LED5MM   led            1
+LED2                    LED5MM                LED5MM   led            1
+LED3                    LED5MM                LED5MM   led            1
+Q1       16Mhz          XTAL/S                QS       special        1
+R1       150            R-US_0207/10          0207/10  rcl            1
+R2       150            R-US_0207/10          0207/10  rcl            1
+R3       150            R-US_0207/10          0207/10  rcl            1
+R4       200            R-US_0207/10          0207/10  rcl            1
+R5       200            R-US_0207/10          0207/10  rcl            1
+R6       200            R-US_0207/10          0207/10  rcl            1
+R7       200            R-US_0207/10          0207/10  rcl            1
+R8       1k ohms        TRIM_EU-B25P          B25P     pot            1
+R9       1k ohms        TRIM_EU-B25P          B25P     pot            1
+S1       RDT1034        RDT1034               RDT1034  switch         1
+SV1                     FE05-1                FE05-1   con-lsta       1
+T1                      MPS2222A-NPN-TO92-CBE TO92-CBE transistor     1
+T2                      MPS2222A-NPN-TO92-CBE TO92-CBE transistor     1
+T3                      MPS2222A-NPN-TO92-CBE TO92-CBE transistor     1
+X2                      F09HP                 F09HP    con-subd       1
