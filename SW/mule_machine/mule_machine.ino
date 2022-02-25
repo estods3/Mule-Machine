@@ -10,7 +10,7 @@
 // PINOUT DEFINITION
 //inputs
 bool cup_is_present = false;
-const int cup_present_buttonPin = 5; //PD5, physical pin 11
+const int cup_present_buttonPin = 5; //PD5, physical pin 11                 
 const int reset_button_pin = 6; //PD6, physical pin 12
 const int tuner_strength_pin = A4; //PC4, physical pin 27
 const int tuner_sour_pin = A5; //PC5, physical pin 28
