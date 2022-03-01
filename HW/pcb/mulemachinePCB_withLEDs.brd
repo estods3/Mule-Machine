@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mil" altunit="mil"/>
@@ -64,10 +64,10 @@
 <wire x1="85.09" y1="0" x2="85.09" y2="45.085" width="0" layer="20"/>
 <wire x1="85.09" y1="45.085" x2="0" y2="45.085" width="0" layer="20"/>
 <wire x1="0" y1="45.085" x2="0" y2="0" width="0" layer="20"/>
-<hole x="2.54" y="35.56" drill="2"/>
-<hole x="2.54" y="2.54" drill="2"/>
-<hole x="66.04" y="2.54" drill="2"/>
-<hole x="66.04" y="35.56" drill="2"/>
+<hole x="2.54" y="35.56" drill="2.99999375"/>
+<hole x="2.54" y="2.54" drill="2.99999375"/>
+<hole x="66.04" y="2.54" drill="2.99999375"/>
+<hole x="66.04" y="35.56" drill="2.99999375"/>
 <text x="57.15" y="6.35" size="1.778" layer="22" rot="MR0">G</text>
 <text x="31.75" y="6.35" size="1.778" layer="22" rot="MR0">Y</text>
 <text x="6.35" y="6.35" size="1.778" layer="22" rot="MR0">O</text>
@@ -2496,8 +2496,9 @@ design rules under a new name.</description>
 <contactref element="D2" pad="A"/>
 <wire x1="59.6519" y1="36.1823" x2="59.6519" y2="40.513" width="0.7874" layer="16"/>
 <wire x1="60.7695" y1="35.0647" x2="59.6519" y2="36.1823" width="0.7874" layer="16"/>
-<wire x1="62.7253" y1="35.0647" x2="60.7695" y2="35.0647" width="0.7874" layer="16"/>
-<wire x1="73.66" y1="24.13" x2="62.7253" y2="35.0647" width="0.7874" layer="16"/>
+<wire x1="61.4553" y1="35.0647" x2="60.7695" y2="35.0647" width="0.7874" layer="16"/>
+<wire x1="73.66" y1="24.13" x2="72.39" y2="24.13" width="0.7874" layer="16"/>
+<wire x1="72.39" y1="24.13" x2="61.4553" y2="35.0647" width="0.7874" layer="16"/>
 <wire x1="59.6519" y1="40.513" x2="59.69" y2="40.64" width="0.7874" layer="16"/>
 <wire x1="77.3938" y1="11.7348" x2="77.3938" y2="11.0363" width="0.7874" layer="16"/>
 <wire x1="75.1586" y1="13.97" x2="77.3938" y2="11.7348" width="0.7874" layer="16"/>
@@ -2510,10 +2511,11 @@ design rules under a new name.</description>
 <contactref element="X2" pad="9"/>
 <contactref element="D3" pad="A"/>
 <contactref element="T3" pad="C"/>
-<wire x1="68.5927" y1="32.9692" x2="68.5927" y2="40.513" width="0.7874" layer="1"/>
-<wire x1="73.6219" y1="27.94" x2="68.5927" y2="32.9692" width="0.7874" layer="1"/>
-<wire x1="68.5927" y1="40.513" x2="68.58" y2="40.64" width="0.7874" layer="1"/>
-<wire x1="73.6219" y1="27.94" x2="73.66" y2="27.94" width="0.7874" layer="1"/>
+<wire x1="69.7357" y1="32.3342" x2="69.7357" y2="36.449" width="0.7874" layer="1"/>
+<wire x1="73.66" y1="27.94" x2="73.66" y2="28.4099" width="0.7874" layer="1"/>
+<wire x1="73.66" y1="28.4099" x2="69.7357" y2="32.3342" width="0.7874" layer="1"/>
+<wire x1="69.7357" y1="36.449" x2="69.39844375" y2="39.82155625" width="0.7874" layer="1"/>
+<wire x1="69.39844375" y1="39.82155625" x2="68.58" y2="40.64" width="0.7874" layer="1"/>
 <wire x1="80.0481" y1="13.1318" x2="80.0481" y2="12.4333" width="0.7874" layer="1"/>
 <wire x1="82.5627" y1="15.6464" x2="80.0481" y2="13.1318" width="0.7874" layer="1"/>
 <wire x1="82.5627" y1="21.6535" x2="82.5627" y2="15.6464" width="0.7874" layer="1"/>
@@ -2764,9 +2766,9 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="R3" pad="2"/>
 <contactref element="T3" pad="B"/>
-<wire x1="64.262" y1="36.8808" x2="61.0489" y2="36.8808" width="0.3048" layer="16"/>
-<wire x1="66.2178" y1="38.8366" x2="64.262" y2="36.8808" width="0.3048" layer="16"/>
-<wire x1="69.4309" y1="38.8366" x2="66.2178" y2="38.8366" width="0.3048" layer="16"/>
+<wire x1="62.992" y1="36.8808" x2="61.0489" y2="36.8808" width="0.3048" layer="16"/>
+<wire x1="64.9478" y1="38.8366" x2="62.992" y2="36.8808" width="0.3048" layer="16"/>
+<wire x1="69.4309" y1="38.8366" x2="64.9478" y2="38.8366" width="0.3048" layer="16"/>
 <wire x1="71.1073" y1="40.513" x2="69.4309" y2="38.8366" width="0.3048" layer="16"/>
 <wire x1="61.0489" y1="36.8808" x2="60.96" y2="36.83" width="0.3048" layer="16"/>
 <wire x1="71.1073" y1="40.513" x2="71.12" y2="40.64" width="0.3048" layer="16"/>
