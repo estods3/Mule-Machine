@@ -22225,7 +22225,7 @@ Tuner</text>
 <wire x1="124.46" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SWTPOT" class="0">
+<net name="STRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
 <label x="86.36" y="22.86" size="1.778" layer="95"/>
@@ -22237,7 +22237,7 @@ Tuner</text>
 <label x="78.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STRPOT" class="0">
+<net name="SOURRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
 <label x="86.36" y="-12.7" size="1.778" layer="95"/>

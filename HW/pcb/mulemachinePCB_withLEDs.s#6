@@ -21625,7 +21625,7 @@ Source: Panasonic</description>
 <class number="0" name="default" width="0.3048" drill="0.508">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="Power" width="0.508" drill="0.508">
+<class number="1" name="Power" width="0.7874" drill="0.508">
 <clearance class="1" value="0.254"/>
 </class>
 </classes>

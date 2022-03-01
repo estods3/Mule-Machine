@@ -21692,6 +21692,8 @@ Tuner</text>
 <text x="86.36" y="-7.62" size="1.778" layer="91">Strength
 Tuner</text>
 <text x="132.08" y="104.14" size="1.778" layer="91">0.15A each motor</text>
+<text x="96.52" y="99.06" size="1.778" layer="91">Control Input
+3.3V/150Ohm = 22mA</text>
 </plain>
 <instances>
 <instance part="T1" gate="G$1" x="142.24" y="96.52" smashed="yes">

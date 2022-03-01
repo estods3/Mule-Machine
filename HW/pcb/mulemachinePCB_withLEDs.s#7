@@ -22036,7 +22036,7 @@ Tuner</text>
 <label x="104.14" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P1" class="0">
+<net name="P1" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="157.48" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
@@ -22049,7 +22049,7 @@ Tuner</text>
 <label x="147.32" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P2" class="0">
+<net name="P2" class="1">
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
 <wire x1="180.34" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
@@ -22062,7 +22062,7 @@ Tuner</text>
 <label x="162.56" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P3" class="0">
+<net name="P3" class="1">
 <segment>
 <pinref part="X2" gate="G$1" pin="9"/>
 <pinref part="D3" gate="1" pin="A"/>
