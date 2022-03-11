@@ -21625,7 +21625,7 @@ Source: Panasonic</description>
 <class number="0" name="default" width="0.3048" drill="0.508">
 <clearance class="0" value="0.254"/>
 </class>
-<class number="1" name="Power" width="0.508" drill="0.508">
+<class number="1" name="Power" width="0.7874" drill="0.508">
 <clearance class="1" value="0.254"/>
 </class>
 </classes>
@@ -22036,7 +22036,7 @@ Tuner</text>
 <label x="104.14" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P1" class="0">
+<net name="P1" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="157.48" y1="101.6" x2="144.78" y2="101.6" width="0.1524" layer="91"/>
@@ -22049,7 +22049,7 @@ Tuner</text>
 <label x="147.32" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P2" class="0">
+<net name="P2" class="1">
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
 <wire x1="180.34" y1="93.98" x2="157.48" y2="93.98" width="0.1524" layer="91"/>
@@ -22062,7 +22062,7 @@ Tuner</text>
 <label x="162.56" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="P3" class="0">
+<net name="P3" class="1">
 <segment>
 <pinref part="X2" gate="G$1" pin="9"/>
 <pinref part="D3" gate="1" pin="A"/>
@@ -22225,7 +22225,7 @@ Tuner</text>
 <wire x1="124.46" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SWTPOT" class="0">
+<net name="STRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
 <label x="86.36" y="22.86" size="1.778" layer="95"/>
@@ -22237,7 +22237,7 @@ Tuner</text>
 <label x="78.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STRPOT" class="0">
+<net name="SOURRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
 <label x="86.36" y="-12.7" size="1.778" layer="95"/>
