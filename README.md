@@ -37,7 +37,7 @@ Eagle Schematic file
 Eagle board layout file
 
 [<img src="https://github.com/estods3/mule_machine/blob/main/HW/pcb/mulemachinePCB_withLEDs.png" title="PCB Top" alt="drawing" width="500"/>]()
-[<img src="https://github.com/estods3/mule_machine/blob/main/HW/pcb/mulemachinePCB_withLEDs_botttom.png" title="PCB Bottom" alt="drawing" width="500"/>]()
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/pcb/mulemachinePCB_withLEDs_bottom.png" title="PCB Bottom" alt="drawing" width="500"/>]()
 
 associated gerber files (manufacturing)
 
