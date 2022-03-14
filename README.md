@@ -1,6 +1,7 @@
 # mule_machine
 A drinkbot for making Moscow Mules
-[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MuleMachineCAD.png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
+
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MuleMachineCAD.png" title="DRIP TRAY ISO" alt="drawing" width="800"/>]()
 
 ## Design File Structure
 
