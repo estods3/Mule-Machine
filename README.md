@@ -18,9 +18,11 @@ ATmega328 microcontroller code.
 #### cad
 
 Sketchup File - 3D model
+
 [<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MuleMachineCAD.png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
-[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(ISO).png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
-[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(Top%20View).png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
+
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(ISO).png" title="DRIP TRAY ISO" alt="drawing" width="500"/>]()
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(Top%20View).png" title="DRIP TRAY ISO" alt="drawing" width="500"/>]()
 
 LightBurn laser engraved part files (Coming Soon)
 
