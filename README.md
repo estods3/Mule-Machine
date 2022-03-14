@@ -27,7 +27,8 @@ Sketchup File - 3D model
 
 LightBurn laser engraved part files (Coming Soon)
 
-3D printed part files (Coming Soon)
+3D printed part files
+* MM DRIP TRAY.STL 
 
 #### pcb
 
