@@ -1,5 +1,6 @@
 # mule_machine
 A drinkbot for making Moscow Mules
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MuleMachineCAD.png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
 
 ## Design File Structure
 
@@ -15,9 +16,11 @@ ATmega328 microcontroller code.
 ### HW
 
 #### cad
-[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(ISO).png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
 
 Sketchup File - 3D model
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MuleMachineCAD.png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(ISO).png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
+[<img src="https://github.com/estods3/mule_machine/blob/main/HW/cad/MM%20DRIP%20TRAY%20(Top%20View).png" title="DRIP TRAY ISO" alt="drawing" width="600"/>]()
 
 LightBurn laser engraved part files (Coming Soon)
 
