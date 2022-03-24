@@ -15,9 +15,9 @@ const int reset_button_pin = 6; //PD6, physical pin 12
 const int tuner_strength_pin = A4; //PC4, physical pin 27
 const int tuner_sour_pin = A5; //PC5, physical pin 28
 //outputs
-const int ledOrange_Vodka = 2; // PD2, physical pin 4
+const int ledGreen_Lime = 2; // PD2, physical pin 4
 const int ledYellow_GingerBeer = 3; // PD3, physical pin 5
-const int ledGreen_Lime =  4; // PD4, physical pin 6
+const int ledOrange_Vodka = 4; // PD4, physical pin 6
 const int pump_Vodka = A1; //PC1,A1, physical pin 24
 const int pump_GingerBeer = A2; //PC2,A2, physical pin 25
 const int pump_Lime =  A3; //PC3,A3, physical pin 26
@@ -30,11 +30,20 @@ const int drink_starting_blink_duration = 100;
 
 //PUMP CURRENT SPIKE DELAY
 // prevent pumps drawing too much current from Arduino when turning on all at once.
-const int current_spike_delay = 10;
+const int current_spike_delay = 15;
 
-//TODO numDrinksTilEmpty
+// MIXING MODE CALIBRATION
+const int pour_duration_per_cycle = 1200; //ms.
 
-// MULE CALIBRATION
+// Nominal Recipe
+// 0.5 Cups per serving GB--> 2/3rd of Drink should be Ginger Beer
+// 0.0625 Cups per serving Lime --> Of remaining 1/3, 1/4 should be Lime
+// 0.1875 Cups per serving Vodka --> Of remaining 1/3, 3/4 should be Vodka
+// -----------------------------------------------------------------------
+const int nominal_setting_ginger_beer = 0.666 * pour_duration_per_cycle;
+const int nominal_setting_lime = (0.333 * pour_duration_per_cycle) * 0.25;
+const int nominal_setting_vodka = (0.333 * pour_duration_per_cycle) * 0.75;
+
 int value; //save analog value
 int time_passed_ginger_beer_start; //calculation
 const int numReadings  = 10;
@@ -48,12 +57,16 @@ double calibration_ratio_Lime;
 double calibration_ratio_GingerBeer;
 double calibration_ratio_Vodka;
 
+//TODO numDrinksTilEmpty
+
 // FUNCTION: setup()
 void setup() {
 
   Serial.begin(9600);
   Serial.println(F("SUM,Vodka,Lime,GingerBeer")); 
 
+  // Update Recipe from Calibration
+  // (READ numReadings numer of samples from pots)
   for(int i=1; i< numReadings; i++){
     calibration_ratio_Vodka = smooth_strength();
     calibration_ratio_Lime = smooth_sour();
@@ -115,11 +128,13 @@ void setup() {
 // FUNCTION: loop()
 void loop() {
 
+  // Update Recipe from Calibration
+  // (READ numReadings numer of samples from pots)
   for(int i=1; i< numReadings; i++){
     calibration_ratio_Vodka = smooth_strength();
     calibration_ratio_Lime = smooth_sour();
   }
-  calibration_ratio_GingerBeer = 1200 - calibration_ratio_Vodka - calibration_ratio_Lime;
+  calibration_ratio_GingerBeer = pour_duration_per_cycle - calibration_ratio_Vodka - calibration_ratio_Lime;
   
   Serial.print(calibration_ratio_GingerBeer + calibration_ratio_Lime + calibration_ratio_Vodka);
   Serial.print(',');
@@ -129,22 +144,21 @@ void loop() {
   Serial.print(',');
   Serial.println(calibration_ratio_GingerBeer);
 
-
-  
+  // STANDBY MODE
   // Perform a short animation every 3 seconds to let you know machine is alive
-  digitalWrite(ledOrange_Vodka, HIGH);
-  delay(standby_blink_duration);
-  digitalWrite(ledOrange_Vodka, LOW);
-  digitalWrite(ledYellow_GingerBeer, HIGH);
-  delay(standby_blink_duration);
-  digitalWrite(ledYellow_GingerBeer, LOW);
   digitalWrite(ledGreen_Lime, HIGH);
   delay(standby_blink_duration);
   digitalWrite(ledGreen_Lime, LOW);
-  delay(standby_animation_interval);
-  digitalWrite(ledOrange_Vodka, LOW);
+  digitalWrite(ledYellow_GingerBeer, HIGH);
+  delay(standby_blink_duration);
   digitalWrite(ledYellow_GingerBeer, LOW);
+  digitalWrite(ledOrange_Vodka, HIGH);
+  delay(standby_blink_duration);
+  digitalWrite(ledOrange_Vodka, LOW);
+  delay(standby_animation_interval);
   digitalWrite(ledGreen_Lime, LOW);
+  digitalWrite(ledYellow_GingerBeer, LOW);
+  digitalWrite(ledOrange_Vodka, LOW);
 
   //TODO if(numDrinksTilEmpty < 3) flash RED LED
   
@@ -185,19 +199,11 @@ void loop() {
        digitalWrite(ledGreen_Lime, LOW);
        while(cup_is_present){
 
-           // UPDATE RECIPE FROM CALIBRATION
-           // 0.5 Cups per serving GB--> 2/3rd of Drink should be Ginger Beer
-           // 0.0625 Cups per serving Lime --> Of remaining 1/3, 1/4 should be Lime
-           // 0.1875 Cups per serving Vodka --> Of remaining 1/3, 3/4 should be Vodka
-           // -----------------------------------------------------------------------
-           // NOMINAL: GB 800/1200, Lime 100/1200, Vodka, 300/1200 --> Total time of 1200ms
-           //NOTE: Lower Limit of pump values must be at least current_spike_delay in value
-           //NOTE: output is flipped max-to-low to match 5V and GND placement on schematic (5V should be on left pin when facing POT)
            for(int i=1; i< numReadings; i++){
              calibration_ratio_Vodka = smooth_strength();
              calibration_ratio_Lime = smooth_sour();
            }
-           calibration_ratio_GingerBeer = 1200 - calibration_ratio_Vodka - calibration_ratio_Lime;
+           calibration_ratio_GingerBeer = pour_duration_per_cycle - calibration_ratio_Vodka - calibration_ratio_Lime;
             
            Serial.print(calibration_ratio_GingerBeer + calibration_ratio_Lime + calibration_ratio_Vodka);
            Serial.print(',');
@@ -213,13 +219,24 @@ void loop() {
            // and resetting the Arduino.
            digitalWrite(ledYellow_GingerBeer, HIGH);
            digitalWrite(pump_GingerBeer, HIGH);
+           //delay(calibration_ratio_GingerBeer);
+           //digitalWrite(pump_GingerBeer, LOW);
+           //digitalWrite(ledYellow_GingerBeer, LOW);
+           
            delay(current_spike_delay);
            digitalWrite(ledOrange_Vodka, HIGH);
            digitalWrite(pump_Vodka, HIGH);
+           //delay(calibration_ratio_Vodka);
+           //digitalWrite(pump_Vodka, LOW);
+           //digitalWrite(ledOrange_Vodka, LOW);
+           
            delay(current_spike_delay);           
            digitalWrite(ledGreen_Lime, HIGH);
            digitalWrite(pump_Lime, HIGH);
-
+           //delay(calibration_ratio_Lime);
+           //digitalWrite(pump_Lime, LOW);
+           //digitalWrite(ledGreen_Lime, LOW);
+           
            // MODULATE VOKDA AND LIME
            // turn off pumps in order of least time to greatest time
            // Either: Lime, Vokda, GB  OR  Vodka, Lime, GB
@@ -258,6 +275,7 @@ void loop() {
 
            // If there is still more time needed to run ginger beer pump,
            // then finish remaining time with delay()
+           // TODO reenable when issue #13 is fixed and pumps can be run in parellel
            if((calibration_ratio_GingerBeer - time_passed_ginger_beer_start) > 0){
                delay(calibration_ratio_GingerBeer - time_passed_ginger_beer_start);
            }
@@ -266,12 +284,17 @@ void loop() {
                      
            cup_is_present = digitalRead(cup_present_buttonPin) == LOW;
        }
+       digitalWrite(pump_GingerBeer, LOW);
+       digitalWrite(pump_Vodka, LOW);
+       digitalWrite(pump_Lime, LOW);
        digitalWrite(ledOrange_Vodka, LOW);
        digitalWrite(ledYellow_GingerBeer, LOW);
        digitalWrite(ledGreen_Lime, LOW);
   }
 }
 
+//NOTE: Lower Limit of pump values must be at least current_spike_delay in value
+//NOTE: output is flipped max-to-low to match 5V and GND placement on schematic (5V should be on left pin when facing POT)
 long smooth_sour() { /* function smooth */
   ////Perform average on sensor readings
   long average;
@@ -279,7 +302,7 @@ long smooth_sour() { /* function smooth */
   total_sour = total_sour - readings_sour[readIndex_sour];
   // read the sensor:
   value = analogRead(tuner_sour_pin);
-  value = map(value, 0, 1023, 200, current_spike_delay);
+  value = map(value, 0, 1023, 2*nominal_setting_lime, current_spike_delay);
   readings_sour[readIndex_sour] = value;
   // add value to total:
   total_sour = total_sour + readings_sour[readIndex_sour];
@@ -294,6 +317,8 @@ long smooth_sour() { /* function smooth */
   return average;
 }
 
+//NOTE: Lower Limit of pump values must be at least current_spike_delay in value
+//NOTE: output is flipped max-to-low to match 5V and GND placement on schematic (5V should be on left pin when facing POT)
 long smooth_strength() { /* function smooth */
   ////Perform average on sensor readings
   long average;
@@ -301,7 +326,7 @@ long smooth_strength() { /* function smooth */
   total_strength = total_strength - readings_strength[readIndex_strength];
   // read the sensor:
   value = analogRead(tuner_strength_pin);
-  value = map(value, 0, 1023, 500, 100 + current_spike_delay);
+  value = map(value, 0, 1023, 2*nominal_setting_vodka, 100 + current_spike_delay);
   readings_strength[readIndex_strength] = value;
   // add value to total:
   total_strength = total_strength + readings_strength[readIndex_strength];
