@@ -24,7 +24,7 @@ const int pump_Lime =  A3; //PC3,A3, physical pin 26
 
 //ANIMATION DELAYS
 const int bootup_blink_duration = 100;
-const int standby_blink_duration = 15;
+const int standby_blink_duration = 25;
 const int standby_animation_interval = 3000;
 const int drink_starting_blink_duration = 100;
 
