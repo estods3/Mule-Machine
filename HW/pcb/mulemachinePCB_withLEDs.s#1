@@ -22050,7 +22050,7 @@ Tuner</text>
 <label x="88.9" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="ORANGE" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -22058,7 +22058,7 @@ Tuner</text>
 <label x="132.08" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="YELLOW" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="2"/>
@@ -22066,7 +22066,7 @@ Tuner</text>
 <label x="134.62" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="GREEN" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="A"/>

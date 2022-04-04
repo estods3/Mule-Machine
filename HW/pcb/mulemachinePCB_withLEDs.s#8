@@ -21672,9 +21672,9 @@ Source: Panasonic</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R10" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="US-EVU" device="L" package3d_urn="urn:adsk.eagle:package:22736/1" technology="F3"/>
 <part name="R11" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="US-EVU" device="L" package3d_urn="urn:adsk.eagle:package:22736/1" technology="F3"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="153CLV-0605" package3d_urn="urn:adsk.eagle:package:23398/2" value="470uF"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="470uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -21847,16 +21847,16 @@ Tuner</text>
 <instance part="R11" gate="G$1" x="101.6" y="22.86" smashed="yes" rot="R180">
 <attribute name="NAME" x="104.14" y="22.86" size="1.778" layer="95"/>
 </instance>
-<instance part="C5" gate="G$1" x="0" y="30.48" smashed="yes">
-<attribute name="NAME" x="1.016" y="31.115" size="1.778" layer="95"/>
-<attribute name="VALUE" x="1.016" y="26.289" size="1.778" layer="96"/>
-</instance>
 <instance part="SUPPLY11" gate="GND" x="20.32" y="50.8" smashed="yes">
 <attribute name="VALUE" x="18.415" y="47.625" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="12.7" y="76.2" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.081" y="77.216" size="1.778" layer="95"/>
 <attribute name="VALUE" x="18.161" y="77.216" size="1.778" layer="96"/>
+</instance>
+<instance part="C4" gate="G$1" x="0" y="30.48" smashed="yes">
+<attribute name="NAME" x="1.016" y="31.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1.016" y="26.289" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21925,7 +21925,7 @@ Tuner</text>
 <wire x1="-10.16" y1="25.4" x2="-10.16" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="0" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
 <junction x="-10.16" y="25.4"/>
-<pinref part="C5" gate="G$1" pin="-"/>
+<pinref part="C4" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="T3" gate="G$1" pin="E"/>
@@ -22006,7 +22006,7 @@ Tuner</text>
 <pinref part="IC2" gate="G$1" pin="VCC@1"/>
 <wire x1="25.4" y1="35.56" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 <label x="15.24" y="35.56" size="1.778" layer="95"/>
-<pinref part="C5" gate="G$1" pin="+"/>
+<pinref part="C4" gate="G$1" pin="+"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>

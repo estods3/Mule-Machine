@@ -21574,9 +21574,9 @@ Button</text>
 <text x="147.32" y="15.24" size="1.778" layer="91">DEBUG INTERFACE</text>
 <text x="124.46" y="60.96" size="1.778" layer="91">USER INTERFACE</text>
 <text x="182.88" y="111.76" size="1.778" layer="91">Harness</text>
-<text x="86.36" y="27.94" size="1.778" layer="91">Sweetness
+<text x="86.36" y="-7.62" size="1.778" layer="91">Sweetness
 Tuner</text>
-<text x="86.36" y="-7.62" size="1.778" layer="91">Strength
+<text x="86.36" y="27.94" size="1.778" layer="91">Strength
 Tuner</text>
 <text x="132.08" y="104.14" size="1.778" layer="91">0.15A each motor</text>
 <text x="96.52" y="99.06" size="1.778" layer="91">Control Input
