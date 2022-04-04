@@ -21657,7 +21657,7 @@ Source: Panasonic</description>
 <part name="Q1" library="special" library_urn="urn:adsk.eagle:library:367" deviceset="XTAL/S" device="" package3d_urn="urn:adsk.eagle:package:26647/2" value="16Mhz"/>
 <part name="C2" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="22pF"/>
 <part name="C3" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="22pF"/>
-<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="200"/>
+<part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="LED1" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM" package3d_urn="urn:adsk.eagle:package:15799/2"/>
@@ -21672,7 +21672,7 @@ Source: Panasonic</description>
 <part name="SUPPLY10" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="R10" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="US-EVU" device="L" package3d_urn="urn:adsk.eagle:package:22736/1" technology="F3"/>
 <part name="R11" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="US-EVU" device="L" package3d_urn="urn:adsk.eagle:package:22736/1" technology="F3"/>
-<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="153CLV-0605" package3d_urn="urn:adsk.eagle:package:23398/2"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="153CLV-0605" package3d_urn="urn:adsk.eagle:package:23398/2" value="470uF"/>
 <part name="SUPPLY11" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="C1" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 </parts>
@@ -22225,7 +22225,7 @@ Tuner</text>
 <wire x1="124.46" y1="96.52" x2="116.84" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SWTPOT" class="0">
+<net name="STRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="22.86" x2="96.52" y2="22.86" width="0.1524" layer="91"/>
 <label x="86.36" y="22.86" size="1.778" layer="95"/>
@@ -22237,7 +22237,7 @@ Tuner</text>
 <label x="78.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="STRPOT" class="0">
+<net name="SOURRPOT" class="0">
 <segment>
 <wire x1="86.36" y1="-12.7" x2="96.52" y2="-12.7" width="0.1524" layer="91"/>
 <label x="86.36" y="-12.7" size="1.778" layer="95"/>
@@ -22284,8 +22284,8 @@ Tuner</text>
 <approved hash="104,1,25.4,48.26,IC2,VCC,5V,,,"/>
 <approved hash="104,1,25.4,73.66,IC2,AVCC,5V,,,"/>
 <approved hash="113,1,141.021,96.52,T1,,,,,"/>
-<approved hash="113,1,151.181,88.9,T2,,,,,"/>
-<approved hash="113,1,191.821,81.28,T3,,,,,"/>
+<approved hash="113,1,148.641,88.9,T2,,,,,"/>
+<approved hash="113,1,156.261,81.28,T3,,,,,"/>
 <approved hash="113,1,187.96,100.583,X2,,,,,"/>
 <approved hash="113,1,134.317,49.6976,LED1,,,,,"/>
 <approved hash="113,1,143.51,53.6617,LED2,,,,,"/>
