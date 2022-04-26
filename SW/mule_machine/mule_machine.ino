@@ -10,8 +10,9 @@
 // PINOUT DEFINITION
 //inputs
 bool cup_is_present = false;
+bool manual_override = false;
 const int cup_present_buttonPin = 5; //PD5, physical pin 11                 
-const int reset_button_pin = 6; //PD6, physical pin 12
+const int manual_override_button_pin = 6; //PD6, physical pin 12
 const int tuner_strength_pin = A4; //PC4, physical pin 27
 const int tuner_sour_pin = A5; //PC5, physical pin 28
 //outputs
@@ -76,6 +77,7 @@ void setup() {
   pinMode(tuner_strength_pin, INPUT);
   pinMode(tuner_sour_pin, INPUT);
   pinMode(cup_present_buttonPin, INPUT_PULLUP);
+  pinMode(manual_override_button_pin, INPUT_PULLUP);
   // set the LEDs and Pumps as output
   pinMode(ledOrange_Vodka, OUTPUT);
   pinMode(ledYellow_GingerBeer, OUTPUT);
@@ -123,6 +125,7 @@ void setup() {
   digitalWrite(ledGreen_Lime, LOW);
 
   cup_is_present = false;
+  manual_override = false;
 }
 
 // FUNCTION: loop()
@@ -167,7 +170,8 @@ void loop() {
   // the button creates a LOW signal.
   // When button pressed: call functions for Vodka, GB, and Lime to pour until button is depressed.
   cup_is_present = digitalRead(cup_present_buttonPin) == LOW; // CUP_present && numDrinksTilEmpty > 0
-  if (cup_is_present) {
+  manual_override = digitalRead(manual_override_button_pin) == LOW;
+  if (cup_is_present || manual_override) {
        // Initiate Mule Making:
        // show initialization animation
        digitalWrite(ledOrange_Vodka, LOW);
@@ -197,7 +201,7 @@ void loop() {
        digitalWrite(ledOrange_Vodka, LOW);
        digitalWrite(ledYellow_GingerBeer, LOW);
        digitalWrite(ledGreen_Lime, LOW);
-       while(cup_is_present){
+       while(cup_is_present || manual_override){
 
            for(int i=1; i< numReadings; i++){
              calibration_ratio_Vodka = smooth_strength();
@@ -283,6 +287,7 @@ void loop() {
            digitalWrite(ledYellow_GingerBeer, LOW);
                      
            cup_is_present = digitalRead(cup_present_buttonPin) == LOW;
+           manual_override = digitalRead(manual_override_button_pin) == LOW;
        }
        digitalWrite(pump_GingerBeer, LOW);
        digitalWrite(pump_Vodka, LOW);
