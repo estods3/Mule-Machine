@@ -21679,17 +21679,17 @@ Tuner</text>
 <instance part="SUPPLY1" gate="GND" x="0" y="76.2" smashed="yes">
 <attribute name="VALUE" x="-1.905" y="73.025" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="134.62" y="50.8" smashed="yes" rot="R90">
-<attribute name="NAME" x="131.572" y="49.276" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="139.192" y="56.515" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="G$1" x="142.24" y="50.8" smashed="yes" rot="R90">
+<attribute name="NAME" x="139.192" y="49.276" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="146.812" y="56.515" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED2" gate="G$1" x="142.24" y="53.34" smashed="yes" rot="R90">
-<attribute name="NAME" x="146.812" y="56.896" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="146.812" y="59.055" size="1.778" layer="96" rot="R180"/>
+<instance part="LED2" gate="G$1" x="149.86" y="53.34" smashed="yes" rot="R90">
+<attribute name="NAME" x="154.432" y="56.896" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="154.432" y="59.055" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED3" gate="G$1" x="152.4" y="55.88" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.972" y="59.436" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="156.972" y="61.595" size="1.778" layer="96" rot="R180"/>
+<instance part="LED3" gate="G$1" x="157.48" y="55.88" smashed="yes" rot="R90">
+<attribute name="NAME" x="162.052" y="59.436" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="61.595" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY2" gate="GND" x="165.1" y="45.72" smashed="yes">
 <attribute name="VALUE" x="163.195" y="42.545" size="1.778" layer="96"/>
@@ -21855,16 +21855,16 @@ Tuner</text>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
-<wire x1="157.48" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="55.88" x2="165.1" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 <wire x1="165.1" y1="55.88" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="165.1" y1="53.34" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="50.8" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="53.34" x2="165.1" y2="53.34" width="0.1524" layer="91"/>
 <junction x="165.1" y="53.34"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="139.7" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="50.8" x2="165.1" y2="50.8" width="0.1524" layer="91"/>
 <junction x="165.1" y="50.8"/>
 </segment>
 <segment>
@@ -21962,7 +21962,7 @@ Tuner</text>
 <pinref part="T3" gate="G$1" pin="C"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="ORANGELED" class="0">
 <segment>
 <wire x1="73.66" y1="50.8" x2="109.22" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="1"/>
@@ -21970,7 +21970,7 @@ Tuner</text>
 <label x="88.9" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
+<net name="GREENLED" class="0">
 <segment>
 <wire x1="73.66" y1="55.88" x2="124.46" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
@@ -22042,7 +22042,7 @@ Tuner</text>
 <wire x1="147.32" y1="2.54" x2="160.02" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="YELLOWLED" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD3(INT1)"/>
 <wire x1="73.66" y1="53.34" x2="116.84" y2="53.34" width="0.1524" layer="91"/>
@@ -22050,25 +22050,28 @@ Tuner</text>
 <label x="88.9" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="ORANGE" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="132.08" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="50.8" x2="119.38" y2="50.8" width="0.1524" layer="91"/>
+<label x="132.08" y="50.8" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="YELLOW" class="0">
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="53.34" x2="127" y2="53.34" width="0.1524" layer="91"/>
+<label x="134.62" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="GREEN" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="134.62" y1="55.88" x2="149.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="55.88" x2="154.94" y2="55.88" width="0.1524" layer="91"/>
+<label x="137.16" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$11" class="0">

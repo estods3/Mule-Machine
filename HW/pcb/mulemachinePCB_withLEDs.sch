@@ -21688,8 +21688,8 @@ Tuner</text>
 <instance part="SUPPLY6" gate="GND" x="160.02" y="71.12" smashed="yes">
 <attribute name="VALUE" x="158.115" y="67.945" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="GND" x="58.42" y="0" smashed="yes">
-<attribute name="VALUE" x="56.515" y="-3.175" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="GND" x="78.74" y="-2.54" smashed="yes">
+<attribute name="VALUE" x="76.835" y="-5.715" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY8" gate="GND" x="147.32" y="-2.54" smashed="yes">
 <attribute name="VALUE" x="145.415" y="-5.715" size="1.778" layer="96"/>
@@ -21886,16 +21886,6 @@ Tuner</text>
 <pinref part="T3" gate="G$1" pin="E"/>
 </segment>
 <segment>
-<pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="58.42" y1="2.54" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="S2" gate="1" pin="P"/>
-<pinref part="S2" gate="1" pin="P1"/>
-<wire x1="60.96" y1="2.54" x2="63.5" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="0" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
-<junction x="60.96" y="2.54"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
 <wire x1="0" y1="78.74" x2="7.62" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
@@ -21944,6 +21934,16 @@ Tuner</text>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND@1"/>
 <wire x1="20.32" y1="53.34" x2="25.4" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="S2" gate="1" pin="S"/>
+<wire x1="73.66" y1="2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="2.54" x2="76.2" y2="0" width="0.1524" layer="91"/>
+<pinref part="S2" gate="1" pin="S1"/>
+<wire x1="76.2" y1="0" x2="73.66" y2="0" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="GND" pin="GND"/>
+<wire x1="76.2" y1="0" x2="78.74" y2="0" width="0.1524" layer="91"/>
+<junction x="76.2" y="0"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -22075,19 +22075,6 @@ Tuner</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="124.46" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="81.28" x2="121.92" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$24" class="0">
-<segment>
-<wire x1="73.66" y1="45.72" x2="76.2" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="45.72" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
-<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
-<pinref part="S2" gate="1" pin="S"/>
-<wire x1="73.66" y1="2.54" x2="76.2" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="2.54" x2="76.2" y2="0" width="0.1524" layer="91"/>
-<junction x="76.2" y="2.54"/>
-<pinref part="S2" gate="1" pin="S1"/>
-<wire x1="76.2" y1="0" x2="73.66" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -22240,6 +22227,23 @@ Tuner</text>
 <pinref part="C1" gate="G$1" pin="1"/>
 <pinref part="IC2" gate="G$1" pin="AREF"/>
 <wire x1="15.24" y1="76.2" x2="25.4" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="MANUALOVERRIDE" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="73.66" y1="45.72" x2="101.6" y2="45.72" width="0.1524" layer="91"/>
+<label x="78.74" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="S2" gate="1" pin="P"/>
+<pinref part="S2" gate="1" pin="P1"/>
+<wire x1="60.96" y1="2.54" x2="63.5" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="0" x2="60.96" y2="0" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="0" x2="60.96" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="0" x2="35.56" y2="0" width="0.1524" layer="91"/>
+<junction x="60.96" y="0"/>
+<label x="35.56" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
