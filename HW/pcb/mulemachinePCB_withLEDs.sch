@@ -22252,14 +22252,15 @@ Tuner</text>
 <errors>
 <approved hash="104,1,25.4,48.26,IC2,VCC,5V,,,"/>
 <approved hash="104,1,25.4,73.66,IC2,AVCC,5V,,,"/>
+<approved hash="113,1,187.96,100.583,X2,,,,,"/>
+<approved hash="113,1,141.937,49.6976,LED1,,,,,"/>
+<approved hash="113,1,151.13,53.6617,LED2,,,,,"/>
+<approved hash="113,1,158.75,56.2017,LED3,,,,,"/>
+<approved hash="113,1,162.602,3.52044,SV1,,,,,"/>
 <approved hash="113,1,141.021,96.52,T1,,,,,"/>
 <approved hash="113,1,148.641,88.9,T2,,,,,"/>
 <approved hash="113,1,156.261,81.28,T3,,,,,"/>
-<approved hash="113,1,187.96,100.583,X2,,,,,"/>
-<approved hash="113,1,134.317,49.6976,LED1,,,,,"/>
-<approved hash="113,1,143.51,53.6617,LED2,,,,,"/>
-<approved hash="113,1,153.67,56.2017,LED3,,,,,"/>
-<approved hash="113,1,162.602,3.52044,SV1,,,,,"/>
+<approved hash="113,1,68.58,3.51536,S2,,,,,"/>
 </errors>
 </schematic>
 </drawing>
