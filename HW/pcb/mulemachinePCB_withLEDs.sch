@@ -21602,8 +21602,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="T2" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" technology="2N4401"/>
 <part name="T3" library="transistor-neu-to92" library_urn="urn:adsk.eagle:library:397" deviceset="*-NPN-" device="TO92-EBC" package3d_urn="urn:adsk.eagle:package:28763/2" technology="2N4401"/>
 <part name="C5" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="100uF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="470uF"/>
 <part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
+<part name="C7" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -21795,6 +21796,10 @@ Tuner</text>
 <attribute name="NAME" x="71.12" y="6.35" size="1.778" layer="95"/>
 <attribute name="VALUE" x="71.755" y="6.35" size="1.778" layer="96"/>
 </instance>
+<instance part="C7" gate="G$1" x="-38.1" y="30.48" smashed="yes">
+<attribute name="NAME" x="-36.576" y="30.861" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-36.576" y="25.781" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -21814,6 +21819,9 @@ Tuner</text>
 <pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="-25.4" y1="33.02" x2="-25.4" y2="35.56" width="0.1524" layer="91"/>
 <junction x="-25.4" y="35.56"/>
+<wire x1="-25.4" y1="35.56" x2="-38.1" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="-38.1" y1="35.56" x2="-38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="1"/>
@@ -21871,6 +21879,9 @@ Tuner</text>
 <junction x="0" y="25.4"/>
 <pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="-25.4" y1="25.4" x2="-10.16" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="-25.4" y1="25.4" x2="-38.1" y2="25.4" width="0.1524" layer="91"/>
+<junction x="-25.4" y="25.4"/>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
