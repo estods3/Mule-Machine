@@ -39,16 +39,16 @@ const int drink_starting_blink_duration = 100;
 const int current_spike_delay = 25;
 
 // MIXING MODE CALIBRATION
-const int pour_duration_per_cycle = 150; //ms.
+const int pour_duration_per_cycle = 150*4; //ms.
 
 // Nominal Recipe
 // 0.5 Cups per serving GB--> 2/3rd of Drink should be Ginger Beer
 // 0.0625 Cups per serving Lime --> Of remaining 1/3, 1/4 should be Lime
 // 0.1875 Cups per serving Vodka --> Of remaining 1/3, 3/4 should be Vodka
 // -----------------------------------------------------------------------
-const int nominal_setting_ginger_beer = 0.666 * pour_duration_per_cycle;
-const int nominal_setting_lime = (0.333 * pour_duration_per_cycle) * 0.25;
-const int nominal_setting_vodka = (0.333 * pour_duration_per_cycle) * 0.75;
+const int nominal_setting_ginger_beer = 100;
+const int nominal_setting_lime = (50) * 0.25;
+const int nominal_setting_vodka = (50) * 0.75;
 //100
 //37.5
 //12.5
@@ -95,7 +95,7 @@ void setup() {
   SoftPWMSet(ledOrange_Vodka, 0);
   SoftPWMSet(ledYellow_GingerBeer, 0);
   SoftPWMSet(ledGreen_Lime, 0);
-  SoftPWMSetFadeTime(ALL, 100, 100);
+  SoftPWMSetFadeTime(ALL, 200, 200);
   
   // Perform an LED animation to let you know the machine is up and runnning
   delay(bootup_blink_duration);
@@ -225,6 +225,14 @@ void loop() {
   }
 }
 
+/// ---------
+/// FUNCTIONS
+/// ---------
+
+/*
+ * FUNCTION: update_calibration_from_user_settings 
+ * DEF: update the calibration percentages from the users settings using potentiometers.
+ */
 void update_calibration_from_user_settings(){
   // Update Recipe from Calibration
   // (READ numReadings numer of samples from pots)
@@ -232,7 +240,7 @@ void update_calibration_from_user_settings(){
     calibration_percentage_Vodka = smooth_strength();
     calibration_percentage_Lime = smooth_sour();
   }
-  calibration_percentage_GingerBeer = pour_duration_per_cycle - calibration_percentage_Vodka - calibration_percentage_Lime;
+  calibration_percentage_GingerBeer = 150 - calibration_percentage_Vodka - calibration_percentage_Lime;
   
   //Error Checking
   if(calibration_percentage_GingerBeer > 100){
@@ -255,6 +263,10 @@ void update_calibration_from_user_settings(){
   Serial.println(calibration_percentage_GingerBeer);
 }
 
+/*
+ * FUNCTION: smooth_sour 
+ * DEF: performs moving average on sour potentiometer.
+ */
 //NOTE: output is flipped max-to-low to match 5V and GND placement on schematic (5V should be on left pin when facing POT)
 long smooth_sour() { /* function smooth */
   ////Perform average on sensor readings
@@ -278,6 +290,10 @@ long smooth_sour() { /* function smooth */
   return average;
 }
 
+/*
+ * FUNCTION: smooth_strength
+ * DEF: performs moving average on strength potentiometer.
+ */
 //NOTE: output is flipped max-to-low to match 5V and GND placement on schematic (5V should be on left pin when facing POT)
 long smooth_strength() { /* function smooth */
   ////Perform average on sensor readings
