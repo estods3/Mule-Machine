@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -2084,12 +2084,12 @@ design rules under a new name.</description>
 </designrules>
 <autorouter>
 <pass name="Default">
-<param name="RoutingGrid" value="50mil"/>
+<param name="RoutingGrid" value="5.5mil"/>
 <param name="AutoGrid" value="1"/>
 <param name="Efforts" value="0"/>
 <param name="TopRouterVariant" value="1"/>
 <param name="tpViaShape" value="round"/>
-<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.1" value="*"/>
 <param name="PrefDir.2" value="0"/>
 <param name="PrefDir.3" value="0"/>
 <param name="PrefDir.4" value="0"/>
@@ -2104,8 +2104,8 @@ design rules under a new name.</description>
 <param name="PrefDir.13" value="0"/>
 <param name="PrefDir.14" value="0"/>
 <param name="PrefDir.15" value="0"/>
-<param name="PrefDir.16" value="a"/>
-<param name="cfVia" value="8"/>
+<param name="PrefDir.16" value="*"/>
+<param name="cfVia" value="90"/>
 <param name="cfNonPref" value="5"/>
 <param name="cfChangeDir" value="2"/>
 <param name="cfOrthStep" value="2"/>
@@ -2143,8 +2143,10 @@ design rules under a new name.</description>
 <param name="mnRipupTotal" value="100"/>
 </pass>
 <pass name="Follow-me" refer="Default" active="yes">
+<param name="cfVia" value="8"/>
 </pass>
 <pass name="Busses" refer="Default" active="yes">
+<param name="cfVia" value="8"/>
 <param name="cfNonPref" value="4"/>
 <param name="cfBusImpact" value="4"/>
 <param name="cfHugging" value="0"/>
@@ -2154,28 +2156,17 @@ design rules under a new name.</description>
 </pass>
 <pass name="Optimize1" refer="Default" active="yes">
 <param name="cfVia" value="99"/>
-<param name="cfExtdStep" value="10"/>
-<param name="cfHugging" value="1"/>
-<param name="mnExtdSteps" value="1"/>
-<param name="mnRipupLevel" value="0"/>
 </pass>
 <pass name="Optimize2" refer="Optimize1" active="yes">
-<param name="cfNonPref" value="0"/>
-<param name="cfChangeDir" value="6"/>
-<param name="cfExtdStep" value="0"/>
-<param name="cfBonusStep" value="2"/>
-<param name="cfMalusStep" value="2"/>
-<param name="cfPadImpact" value="2"/>
-<param name="cfSmdImpact" value="2"/>
-<param name="cfHugging" value="0"/>
 </pass>
 <pass name="Optimize3" refer="Optimize2" active="yes">
-<param name="cfChangeDir" value="8"/>
+<param name="cfBonusStep" value="0"/>
+<param name="cfMalusStep" value="0"/>
 <param name="cfPadImpact" value="0"/>
 <param name="cfSmdImpact" value="0"/>
+<param name="cfHugging" value="0"/>
 </pass>
 <pass name="Optimize4" refer="Optimize3" active="yes">
-<param name="cfChangeDir" value="25"/>
 </pass>
 </autorouter>
 <elements>
@@ -2531,21 +2522,21 @@ design rules under a new name.</description>
 <contactref element="R3" pad="1"/>
 <wire x1="30.353" y1="45.72" x2="34.925" y2="52.07" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PUMP_LIME_VCC">
+<signal name="PUMP_LIME_VCC" class="1">
 <contactref element="T3" pad="C"/>
 <contactref element="X2" pad="9"/>
 <contactref element="D3" pad="A"/>
 <wire x1="51.435" y1="15.24" x2="50.8" y2="46.355" width="0" layer="19" extent="1-1"/>
 <wire x1="48.2092" y1="10.414" x2="51.435" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PUMP_GB_VCC">
+<signal name="PUMP_GB_VCC" class="1">
 <contactref element="T2" pad="C"/>
 <contactref element="X2" pad="5"/>
 <contactref element="D2" pad="A"/>
 <wire x1="48.26" y1="15.24" x2="55.88" y2="46.355" width="0" layer="19" extent="1-1"/>
 <wire x1="46.8376" y1="12.954" x2="48.26" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="PUMP_VODKA_VCC">
+<signal name="PUMP_VODKA_VCC" class="1">
 <contactref element="T1" pad="C"/>
 <contactref element="X2" pad="2"/>
 <contactref element="D1" pad="A"/>
