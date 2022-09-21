@@ -21564,9 +21564,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <schematic_group name="SWEETNESS_TUNER"/>
 <schematic_group name="STRENGTH_TUNER"/>
 <schematic_group name="PUMP_CONNECTOR"/>
-<schematic_group name="MCU"/>
 <schematic_group name="USER_INTERFACE"/>
 <schematic_group name="PUMP_DRIVERS"/>
+<schematic_group name="MCU"/>
 </groups>
 <parts>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1"/>
@@ -21623,35 +21623,35 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <sheet>
 <plain>
 <text x="-101.6" y="114.3" size="1.778" layer="91" grouprefs="12VCONNECTOR">12V Input</text>
-<text x="274.32" y="114.3" size="1.778" layer="91" grouprefs="PUMP_CONNECTOR">Harness</text>
+<text x="281.94" y="114.3" size="1.778" layer="91" grouprefs="PUMP_CONNECTOR">Harness</text>
 <text x="154.94" y="109.22" size="1.778" layer="91" grouprefs="PUMP_DRIVERS">0.15A each motor</text>
 <text x="113.03" y="113.03" size="1.778" layer="91" grouprefs="PUMP_DRIVERS">Control Input
 3.3V/150Ohm = 22mA</text>
 </plain>
 <instances>
-<instance part="D1" gate="1" x="269.24" y="106.68" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
-<attribute name="NAME" x="267.4874" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="256.3114" y="106.045" size="1.778" layer="96"/>
+<instance part="D1" gate="1" x="276.86" y="106.68" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
+<attribute name="NAME" x="275.1074" y="105.41" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="263.9314" y="106.045" size="1.778" layer="96"/>
 </instance>
-<instance part="D2" gate="1" x="269.24" y="96.52" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
-<attribute name="NAME" x="267.4874" y="95.25" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="256.3114" y="95.885" size="1.778" layer="96"/>
+<instance part="D2" gate="1" x="276.86" y="96.52" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
+<attribute name="NAME" x="275.1074" y="95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="263.9314" y="95.885" size="1.778" layer="96"/>
 </instance>
-<instance part="D3" gate="1" x="297.18" y="99.06" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
-<attribute name="NAME" x="300.5074" y="97.79" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="302.0314" y="99.06" size="1.778" layer="96"/>
+<instance part="D3" gate="1" x="304.8" y="99.06" smashed="yes" rot="R90" grouprefs="PUMP_CONNECTOR">
+<attribute name="NAME" x="308.1274" y="97.79" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="309.6514" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="R1" gate="G$1" x="134.62" y="104.14" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="130.81" y="105.6386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="100.838" size="1.778" layer="96"/>
+<instance part="R1" gate="G$1" x="144.78" y="104.14" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="140.97" y="105.6386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="100.838" size="1.778" layer="96"/>
 </instance>
-<instance part="R2" gate="G$1" x="134.62" y="93.98" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="130.81" y="95.4786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="90.678" size="1.778" layer="96"/>
+<instance part="R2" gate="G$1" x="144.78" y="93.98" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="140.97" y="95.4786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="90.678" size="1.778" layer="96"/>
 </instance>
-<instance part="R3" gate="G$1" x="134.62" y="81.28" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="130.81" y="82.7786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="130.81" y="77.978" size="1.778" layer="96"/>
+<instance part="R3" gate="G$1" x="144.78" y="81.28" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="140.97" y="82.7786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="77.978" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="134.62" y="50.8" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="128.27" y="47.2186" size="1.778" layer="95"/>
@@ -21679,9 +21679,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="-101.6" y="110.49" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-101.6" y="100.33" size="1.778" layer="96"/>
 </instance>
-<instance part="X2" gate="G$1" x="279.4" y="101.6" smashed="yes" grouprefs="PUMP_CONNECTOR">
-<attribute name="VALUE" x="275.59" y="90.805" size="1.778" layer="96"/>
-<attribute name="NAME" x="275.59" y="110.49" size="1.778" layer="95"/>
+<instance part="X2" gate="G$1" x="287.02" y="101.6" smashed="yes" grouprefs="PUMP_CONNECTOR">
+<attribute name="VALUE" x="283.21" y="90.805" size="1.778" layer="96"/>
+<attribute name="NAME" x="283.21" y="110.49" size="1.778" layer="95"/>
 </instance>
 <instance part="SUPPLY4" gate="GND" x="-40.64" y="93.98" smashed="yes" grouprefs="12VTO5V">
 <attribute name="VALUE" x="-42.545" y="90.805" size="1.778" layer="96"/>
@@ -21689,8 +21689,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="P+3" gate="VCC" x="-55.88" y="114.3" smashed="yes" grouprefs="12VTO5V">
 <attribute name="VALUE" x="-55.88" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY6" gate="GND" x="147.32" y="73.66" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="VALUE" x="145.415" y="70.485" size="1.778" layer="96"/>
+<instance part="SUPPLY6" gate="GND" x="177.8" y="73.66" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="VALUE" x="175.895" y="70.485" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY7" gate="GND" x="223.52" y="7.62" smashed="yes" grouprefs="MANUAL_OVERRIDE">
 <attribute name="VALUE" x="221.615" y="4.445" size="1.778" layer="96"/>
@@ -21737,17 +21737,17 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="VALUE" x="222.25" y="60.96" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="222.25" y="42.418" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="P+5" gate="VCC" x="269.24" y="101.6" smashed="yes" grouprefs="PUMP_CONNECTOR">
-<attribute name="VALUE" x="266.7" y="100.965" size="1.778" layer="96" rot="R180"/>
+<instance part="P+5" gate="VCC" x="276.86" y="101.6" smashed="yes" grouprefs="PUMP_CONNECTOR">
+<attribute name="VALUE" x="274.32" y="100.965" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+1" gate="VCC" x="269.24" y="111.76" smashed="yes" grouprefs="PUMP_CONNECTOR">
-<attribute name="VALUE" x="266.7" y="111.76" size="1.778" layer="96" rot="R180"/>
+<instance part="P+1" gate="VCC" x="276.86" y="111.76" smashed="yes" grouprefs="PUMP_CONNECTOR">
+<attribute name="VALUE" x="274.32" y="111.76" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY5" gate="GND" x="289.56" y="105.41" smashed="yes" grouprefs="PUMP_CONNECTOR">
-<attribute name="VALUE" x="285.75" y="109.855" size="1.778" layer="96"/>
+<instance part="SUPPLY5" gate="GND" x="297.18" y="105.41" smashed="yes" grouprefs="PUMP_CONNECTOR">
+<attribute name="VALUE" x="293.37" y="109.855" size="1.778" layer="96"/>
 </instance>
-<instance part="P+4" gate="VCC" x="297.18" y="104.14" smashed="yes" grouprefs="PUMP_CONNECTOR">
-<attribute name="VALUE" x="304.8" y="104.14" size="1.778" layer="96" rot="R180"/>
+<instance part="P+4" gate="VCC" x="304.8" y="104.14" smashed="yes" grouprefs="PUMP_CONNECTOR">
+<attribute name="VALUE" x="312.42" y="104.14" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY9" gate="GND" x="162.56" y="5.08" smashed="yes" grouprefs="SWEETNESS_TUNER">
 <attribute name="VALUE" x="165.735" y="4.445" size="1.778" layer="96"/>
@@ -21772,17 +21772,17 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="-29.464" y="104.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-29.464" y="99.949" size="1.778" layer="96"/>
 </instance>
-<instance part="T1" gate="G$1" x="193.04" y="104.14" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="190.5" y="106.68" size="1.778" layer="95"/>
-<attribute name="VALUE" x="182.88" y="109.22" size="1.778" layer="96"/>
+<instance part="T1" gate="G$1" x="198.12" y="104.14" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="195.58" y="106.68" size="1.778" layer="95"/>
+<attribute name="VALUE" x="187.96" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="T2" gate="G$1" x="170.18" y="93.98" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="167.64" y="96.52" size="1.778" layer="95"/>
-<attribute name="VALUE" x="160.02" y="99.06" size="1.778" layer="96"/>
+<instance part="T2" gate="G$1" x="175.26" y="93.98" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="172.72" y="96.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.1" y="99.06" size="1.778" layer="96"/>
 </instance>
-<instance part="T3" gate="G$1" x="144.78" y="81.28" smashed="yes" grouprefs="PUMP_DRIVERS">
-<attribute name="NAME" x="142.24" y="83.82" size="1.778" layer="95"/>
-<attribute name="VALUE" x="134.62" y="86.36" size="1.778" layer="96"/>
+<instance part="T3" gate="G$1" x="152.4" y="81.28" smashed="yes" grouprefs="PUMP_DRIVERS">
+<attribute name="NAME" x="149.86" y="83.82" size="1.778" layer="95"/>
+<attribute name="VALUE" x="142.24" y="86.36" size="1.778" layer="96"/>
 </instance>
 <instance part="C5" gate="G$1" x="-20.32" y="104.14" smashed="yes" grouprefs="12VTO5V">
 <attribute name="NAME" x="-18.796" y="104.521" size="1.778" layer="95"/>
@@ -21830,26 +21830,26 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="X2" gate="G$1" pin="4"/>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
-<wire x1="269.24" y1="99.06" x2="271.78" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="276.86" y1="99.06" x2="279.4" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="D2" gate="1" pin="C"/>
-<junction x="269.24" y="99.06" grouprefs="PUMP_CONNECTOR"/>
+<junction x="276.86" y="99.06" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 <segment>
 <pinref part="D3" gate="1" pin="C"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
-<wire x1="297.18" y1="101.6" x2="294.64" y2="101.6" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<junction x="297.18" y="101.6" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="294.64" y1="101.6" x2="294.64" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="304.8" y1="101.6" x2="302.26" y2="101.6" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<junction x="304.8" y="101.6" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="302.26" y1="101.6" x2="302.26" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="X2" gate="G$1" pin="8"/>
-<wire x1="294.64" y1="99.06" x2="287.02" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="302.26" y1="99.06" x2="294.64" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="269.24" y1="109.22" x2="271.78" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<junction x="269.24" y="109.22" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="276.86" y1="109.22" x2="279.4" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<junction x="276.86" y="109.22" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="X2" gate="G$1" pin="1"/>
-<wire x1="271.78" y1="109.22" x2="271.78" y2="106.68" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="279.4" y1="109.22" x2="279.4" y2="106.68" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
 <net name="GND" class="1">
@@ -21881,15 +21881,14 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<wire x1="172.72" y1="88.9" x2="172.72" y2="76.2" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<wire x1="195.58" y1="76.2" x2="195.58" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<wire x1="172.72" y1="76.2" x2="195.58" y2="76.2" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<wire x1="172.72" y1="76.2" x2="147.32" y2="76.2" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<junction x="172.72" y="76.2" grouprefs="PUMP_DRIVERS"/>
-<junction x="147.32" y="76.2" grouprefs="PUMP_DRIVERS"/>
+<wire x1="177.8" y1="88.9" x2="177.8" y2="76.2" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="200.66" y1="76.2" x2="200.66" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="177.8" y1="76.2" x2="200.66" y2="76.2" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<junction x="177.8" y="76.2" grouprefs="PUMP_DRIVERS"/>
 <pinref part="T1" gate="G$1" pin="E"/>
 <pinref part="T2" gate="G$1" pin="E"/>
 <pinref part="T3" gate="G$1" pin="E"/>
+<wire x1="154.94" y1="76.2" x2="177.8" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
@@ -21907,10 +21906,10 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="6"/>
-<wire x1="287.02" y1="104.14" x2="287.02" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="287.02" y1="109.22" x2="289.56" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="294.64" y1="104.14" x2="294.64" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="294.64" y1="109.22" x2="297.18" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="SUPPLY5" gate="GND" pin="GND"/>
-<wire x1="289.56" y1="109.22" x2="289.56" y2="107.95" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="297.18" y1="109.22" x2="297.18" y2="107.95" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 <segment>
 <pinref part="LED3" gate="G$1" pin="C"/>
@@ -21948,9 +21947,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="C3" gate="G$1" pin="2"/>
 <wire x1="0" y1="86.36" x2="-2.54" y2="86.36" width="0.1524" layer="91" grouprefs="MCU"/>
 <wire x1="-2.54" y1="86.36" x2="-2.54" y2="96.52" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="-2.54" y1="86.36" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
-<junction x="-2.54" y="86.36"/>
-<junction x="-2.54" y="81.28"/>
+<wire x1="-2.54" y1="86.36" x2="-2.54" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
+<junction x="-2.54" y="86.36" grouprefs="MCU"/>
+<junction x="-2.54" y="81.28" grouprefs="MCU"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="S"/>
@@ -22017,15 +22016,15 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <net name="CUPSENSOR" class="0">
 <segment>
 <pinref part="X2" gate="G$1" pin="7"/>
-<wire x1="287.02" y1="101.6" x2="292.1" y2="101.6" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="292.1" y1="101.6" x2="292.1" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="292.1" y1="109.22" x2="330.835" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<label x="314.96" y="109.22" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="294.64" y1="101.6" x2="299.72" y2="101.6" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="299.72" y1="101.6" x2="299.72" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="299.72" y1="109.22" x2="338.455" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<label x="322.58" y="109.22" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="76.2" x2="94.615" y2="76.2" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="IC2" gate="G$1" pin="PD5(T1)"/>
-<label x="78.74" y="76.2" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD4(XCK/T0)"/>
+<wire x1="73.66" y1="78.74" x2="91.44" y2="78.74" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="78.74" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -22090,8 +22089,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <net name="RX" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD0(RXD)"/>
-<wire x1="82.55" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="88.9" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="80.01" y1="88.9" x2="73.66" y2="88.9" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="88.9" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="2"/>
@@ -22102,8 +22101,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <net name="TX" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD1(TXD)"/>
-<wire x1="73.66" y1="86.36" x2="82.55" y2="86.36" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="86.36" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="73.66" y1="86.36" x2="80.01" y2="86.36" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="86.36" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 <segment>
 <pinref part="SV1" gate="G$1" pin="3"/>
@@ -22119,8 +22118,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="PC4(ADC4/SDA)"/>
-<wire x1="73.66" y1="101.6" x2="92.71" y2="101.6" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="101.6" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="73.66" y1="101.6" x2="87.63" y2="101.6" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="101.6" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 <net name="SOURRPOT" class="0">
@@ -22131,28 +22130,27 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="PC5(ADC5/SCL)"/>
-<wire x1="73.66" y1="99.06" x2="92.71" y2="99.06" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="99.06" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="73.66" y1="99.06" x2="90.17" y2="99.06" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="99.06" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <pinref part="T3" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="93.98" x2="167.64" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="149.86" y1="93.98" x2="172.72" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <pinref part="T2" gate="G$1" pin="B"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="139.7" y1="104.14" x2="190.5" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="149.86" y1="104.14" x2="195.58" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <pinref part="T1" gate="G$1" pin="B"/>
 </segment>
 </net>
@@ -22165,11 +22163,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </net>
 <net name="MANUALOVERRIDE" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="73.66" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
-</segment>
-<segment>
 <pinref part="S2" gate="1" pin="P"/>
 <pinref part="S2" gate="1" pin="P1"/>
 <wire x1="205.74" y1="12.7" x2="208.28" y2="12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
@@ -22179,102 +22172,107 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <junction x="205.74" y="10.16" grouprefs="MANUAL_OVERRIDE"/>
 <label x="180.34" y="10.16" size="1.778" layer="95" grouprefs="MANUAL_OVERRIDE"/>
 </segment>
-</net>
-<net name="PUMP_VODKA" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PC1(ADC1)"/>
-<wire x1="73.66" y1="109.22" x2="96.52" y2="109.22" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="109.22" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD7(AIN1)"/>
+<wire x1="73.66" y1="71.12" x2="99.06" y2="71.12" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="71.12" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
+</net>
+<net name="PUMP_VODKA_PWM" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="139.7" y1="104.14" x2="111.76" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <label x="111.76" y="104.14" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
-</net>
-<net name="PUMP_GB" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PC2(ADC2)"/>
-<wire x1="73.66" y1="106.68" x2="93.98" y2="106.68" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="106.68" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PB1(OC1A)"/>
+<wire x1="73.66" y1="63.5" x2="101.6" y2="63.5" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="63.5" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
+</net>
+<net name="PUMP_GB_PWM" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="139.7" y1="93.98" x2="111.76" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <label x="111.76" y="93.98" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
-</net>
-<net name="PUMP_LIME" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PC3(ADC3)"/>
-<wire x1="73.66" y1="104.14" x2="93.98" y2="104.14" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="104.14" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PB2(SS/OC1B)"/>
+<wire x1="73.66" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="60.96" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
+</net>
+<net name="PUMP_LIME_PWM" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="129.54" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<wire x1="139.7" y1="81.28" x2="111.76" y2="81.28" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
 <label x="111.76" y="81.28" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
+<segment>
+<pinref part="IC2" gate="G$1" pin="PB3(MOSI/OC2)"/>
+<wire x1="73.66" y1="58.42" x2="96.52" y2="58.42" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="58.42" size="1.778" layer="95" grouprefs="MCU"/>
+</segment>
 </net>
-<net name="PUMP_LIME_VCC" class="0">
+<net name="PUMP_LIME_VCC" class="1">
 <segment>
 <pinref part="T3" gate="G$1" pin="C"/>
-<wire x1="147.32" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<label x="147.32" y="86.36" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
+<wire x1="154.94" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<label x="154.94" y="86.36" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="9"/>
 <pinref part="D3" gate="1" pin="A"/>
-<wire x1="297.18" y1="96.52" x2="287.02" y2="96.52" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="297.18" y1="96.52" x2="330.2" y2="96.52" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<junction x="297.18" y="96.52" grouprefs="PUMP_CONNECTOR"/>
-<label x="309.88" y="96.52" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="304.8" y1="96.52" x2="294.64" y2="96.52" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="304.8" y1="96.52" x2="337.82" y2="96.52" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<junction x="304.8" y="96.52" grouprefs="PUMP_CONNECTOR"/>
+<label x="317.5" y="96.52" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_GB_VCC" class="0">
+<net name="PUMP_GB_VCC" class="1">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
-<wire x1="172.72" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<label x="172.72" y="99.06" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
+<wire x1="177.8" y1="99.06" x2="195.58" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<label x="177.8" y="99.06" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="5"/>
-<wire x1="271.78" y1="96.52" x2="271.78" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<wire x1="269.24" y1="93.98" x2="271.78" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="279.4" y1="96.52" x2="279.4" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="276.86" y1="93.98" x2="279.4" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="D2" gate="1" pin="A"/>
-<wire x1="269.24" y1="93.98" x2="231.14" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
-<junction x="269.24" y="93.98" grouprefs="PUMP_CONNECTOR"/>
-<label x="231.14" y="93.98" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="276.86" y1="93.98" x2="238.76" y2="93.98" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<junction x="276.86" y="93.98" grouprefs="PUMP_CONNECTOR"/>
+<label x="238.76" y="93.98" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_VODKA_VCC" class="0">
+<net name="PUMP_VODKA_VCC" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
-<wire x1="195.58" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
-<label x="198.12" y="109.22" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
+<wire x1="200.66" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
+<label x="203.2" y="109.22" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
 <segment>
 <pinref part="X2" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="104.14" x2="269.24" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="279.4" y1="104.14" x2="276.86" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="269.24" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR PUMP_CONNECTOR"/>
-<junction x="269.24" y="104.14" grouprefs="PUMP_CONNECTOR"/>
-<label x="231.14" y="104.14" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
+<wire x1="276.86" y1="104.14" x2="238.76" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
+<junction x="276.86" y="104.14" grouprefs="PUMP_CONNECTOR"/>
+<label x="238.76" y="104.14" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="LED_GREEN" class="0">
+<net name="LED_GREEN_PWM" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="111.76" y="55.88" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="73.66" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="83.82" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD5(T1)"/>
+<wire x1="73.66" y1="76.2" x2="99.06" y2="76.2" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="76.2" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
-<net name="LED_YELLOW" class="0">
+<net name="LED_YELLOW_PWM" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <wire x1="111.76" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
@@ -22282,8 +22280,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD3(INT1)"/>
-<wire x1="73.66" y1="81.28" x2="96.52" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="81.28" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="73.66" y1="81.28" x2="101.6" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="81.28" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 <net name="LED_ORANGE" class="0">
@@ -22292,10 +22290,12 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="111.76" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="111.76" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
+</net>
+<net name="LED_ORANGE_PWM" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="73.66" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="78.74" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="73.66" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="76.2" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 </nets>

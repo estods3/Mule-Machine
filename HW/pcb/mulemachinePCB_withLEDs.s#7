@@ -21618,7 +21618,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <part name="S2" library="switch-omron" library_urn="urn:adsk.eagle:library:377" deviceset="10-XX" device="" package3d_urn="urn:adsk.eagle:package:27496/1"/>
 <part name="C7" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
 <part name="C8" library="capacitor-wima" library_urn="urn:adsk.eagle:library:116" deviceset="C" device="2,5-3" package3d_urn="urn:adsk.eagle:package:5436/1" value="0.1uF"/>
-<part name="SUPPLY12" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21656,7 +21655,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </instance>
 <instance part="R4" gate="G$1" x="134.62" y="50.8" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="128.27" y="47.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="138.43" y="47.498" size="1.778" layer="96"/>
+<attribute name="VALUE" x="133.35" y="47.498" size="1.778" layer="96"/>
 </instance>
 <instance part="R5" gate="G$1" x="142.24" y="53.34" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="135.89" y="52.2986" size="1.778" layer="95"/>
@@ -21664,7 +21663,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </instance>
 <instance part="R6" gate="G$1" x="149.86" y="55.88" smashed="yes" grouprefs="USER_INTERFACE">
 <attribute name="NAME" x="143.51" y="57.3786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="153.67" y="57.658" size="1.778" layer="96"/>
+<attribute name="VALUE" x="148.59" y="57.658" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$1" x="-40.64" y="109.22" smashed="yes" grouprefs="12VTO5V">
 <attribute name="NAME" x="-45.72" y="114.3" size="1.778" layer="95"/>
@@ -21688,13 +21687,13 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="VALUE" x="-42.545" y="90.805" size="1.778" layer="96"/>
 </instance>
 <instance part="P+3" gate="VCC" x="-55.88" y="114.3" smashed="yes" grouprefs="12VTO5V">
-<attribute name="VALUE" x="-58.42" y="111.76" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="-55.88" y="114.3" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="147.32" y="73.66" smashed="yes" grouprefs="PUMP_DRIVERS">
 <attribute name="VALUE" x="145.415" y="70.485" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY7" gate="GND" x="154.94" y="-17.78" smashed="yes" grouprefs="MANUAL_OVERRIDE">
-<attribute name="VALUE" x="153.035" y="-20.955" size="1.778" layer="96"/>
+<instance part="SUPPLY7" gate="GND" x="223.52" y="7.62" smashed="yes" grouprefs="MANUAL_OVERRIDE">
+<attribute name="VALUE" x="221.615" y="4.445" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY8" gate="GND" x="200.66" y="43.18" smashed="yes" grouprefs="DEBUG_INTERFACE">
 <attribute name="VALUE" x="198.755" y="40.005" size="1.778" layer="96"/>
@@ -21719,19 +21718,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="11.43" y="113.2586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="11.43" y="108.458" size="1.778" layer="96"/>
 </instance>
-<instance part="SUPPLY1" gate="GND" x="0" y="104.14" smashed="yes" grouprefs="MCU">
-<attribute name="VALUE" x="-1.905" y="100.965" size="1.778" layer="96"/>
+<instance part="SUPPLY1" gate="GND" x="-2.54" y="104.14" smashed="yes" grouprefs="MCU">
+<attribute name="VALUE" x="-4.445" y="100.965" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="162.56" y="50.8" smashed="yes" rot="R90" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="159.512" y="49.276" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="167.132" y="56.515" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="G$1" x="167.64" y="50.8" smashed="yes" rot="R90" grouprefs="USER_INTERFACE">
+<attribute name="VALUE" x="172.212" y="56.515" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED2" gate="G$1" x="170.18" y="53.34" smashed="yes" rot="R90" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="174.752" y="56.896" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="174.752" y="59.055" size="1.778" layer="96" rot="R180"/>
+<instance part="LED2" gate="G$1" x="172.72" y="53.34" smashed="yes" rot="R90" grouprefs="USER_INTERFACE">
+<attribute name="VALUE" x="177.292" y="59.055" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED3" gate="G$1" x="177.8" y="55.88" smashed="yes" rot="R90" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="182.372" y="59.436" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="182.372" y="61.595" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="SUPPLY2" gate="GND" x="185.42" y="45.72" smashed="yes" grouprefs="USER_INTERFACE">
@@ -21765,8 +21761,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="R11" gate="G$1" x="127" y="17.78" smashed="yes" rot="R180" grouprefs="STRENGTH_TUNER">
 <attribute name="NAME" x="129.54" y="17.78" size="1.778" layer="95"/>
 </instance>
-<instance part="SUPPLY11" gate="GND" x="2.54" y="78.74" smashed="yes" grouprefs="MCU">
-<attribute name="VALUE" x="0.635" y="75.565" size="1.778" layer="96"/>
+<instance part="SUPPLY11" gate="GND" x="-2.54" y="78.74" smashed="yes" grouprefs="MCU">
+<attribute name="VALUE" x="-4.445" y="75.565" size="1.778" layer="96"/>
 </instance>
 <instance part="C1" gate="G$1" x="12.7" y="104.14" smashed="yes" rot="R270" grouprefs="MCU">
 <attribute name="NAME" x="13.081" y="104.521" size="1.778" layer="95"/>
@@ -21796,9 +21792,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="-54.864" y="104.775" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-54.864" y="99.949" size="1.778" layer="96"/>
 </instance>
-<instance part="S2" gate="1" x="144.78" y="-12.7" smashed="yes" rot="R270" grouprefs="MANUAL_OVERRIDE">
-<attribute name="NAME" x="147.32" y="-8.89" size="1.778" layer="95"/>
-<attribute name="VALUE" x="147.955" y="-8.89" size="1.778" layer="96"/>
+<instance part="S2" gate="1" x="213.36" y="12.7" smashed="yes" rot="R270" grouprefs="MANUAL_OVERRIDE">
+<attribute name="NAME" x="215.9" y="16.51" size="1.778" layer="95"/>
+<attribute name="VALUE" x="216.535" y="16.51" size="1.778" layer="96"/>
 </instance>
 <instance part="C7" gate="G$1" x="-68.58" y="104.14" smashed="yes" grouprefs="12VTO5V">
 <attribute name="NAME" x="-67.056" y="104.521" size="1.778" layer="95"/>
@@ -21807,9 +21803,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <instance part="C8" gate="G$1" x="15.24" y="78.74" smashed="yes" grouprefs="MCU">
 <attribute name="NAME" x="16.764" y="79.121" size="1.778" layer="95"/>
 <attribute name="VALUE" x="16.764" y="74.041" size="1.778" layer="96"/>
-</instance>
-<instance part="SUPPLY12" gate="GND" x="-2.54" y="83.82" smashed="yes" grouprefs="MCU">
-<attribute name="VALUE" x="-4.445" y="80.645" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -21859,16 +21852,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="271.78" y1="109.22" x2="271.78" y2="106.68" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="GND" class="1">
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="96.52" x2="0" y2="96.52" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="C3" gate="G$1" pin="2"/>
-<wire x1="0" y1="86.36" x2="-2.54" y2="86.36" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="-2.54" y1="86.36" x2="-2.54" y2="96.52" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="SUPPLY12" gate="GND" pin="GND"/>
-<junction x="-2.54" y="86.36" grouprefs="MCU"/>
-</segment>
+<net name="GND" class="0">
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -21909,7 +21893,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="GND"/>
-<wire x1="0" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-2.54" y1="106.68" x2="7.62" y2="106.68" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="SUPPLY1" gate="GND" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="106.68" x2="25.4" y2="106.68" width="0.1524" layer="91" grouprefs="MCU"/>
@@ -21936,10 +21920,10 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="LED2" gate="G$1" pin="C"/>
 <wire x1="185.42" y1="53.34" x2="185.42" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <wire x1="185.42" y1="50.8" x2="185.42" y2="48.26" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
-<wire x1="175.26" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="177.8" y1="53.34" x2="185.42" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <junction x="185.42" y="53.34" grouprefs="USER_INTERFACE"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<wire x1="167.64" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="172.72" y1="50.8" x2="185.42" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <junction x="185.42" y="50.8" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
@@ -21955,20 +21939,28 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="SUPPLY11" gate="GND" pin="GND"/>
 <pinref part="IC2" gate="G$1" pin="GND@1"/>
-<wire x1="2.54" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-2.54" y1="81.28" x2="15.24" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <wire x1="15.24" y1="81.28" x2="25.4" y2="81.28" width="0.1524" layer="91" grouprefs="MCU"/>
 <junction x="15.24" y="81.28" grouprefs="MCU"/>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="96.52" x2="0" y2="96.52" width="0.1524" layer="91" grouprefs="MCU"/>
+<pinref part="C3" gate="G$1" pin="2"/>
+<wire x1="0" y1="86.36" x2="-2.54" y2="86.36" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-2.54" y1="86.36" x2="-2.54" y2="96.52" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="-2.54" y1="86.36" x2="-2.54" y2="81.28" width="0.1524" layer="91"/>
+<junction x="-2.54" y="86.36"/>
+<junction x="-2.54" y="81.28"/>
 </segment>
 <segment>
 <pinref part="S2" gate="1" pin="S"/>
-<wire x1="149.86" y1="-12.7" x2="152.4" y2="-12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<wire x1="152.4" y1="-12.7" x2="152.4" y2="-15.24" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="218.44" y1="12.7" x2="220.98" y2="12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="220.98" y1="12.7" x2="220.98" y2="10.16" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
 <pinref part="S2" gate="1" pin="S1"/>
-<wire x1="152.4" y1="-15.24" x2="149.86" y2="-15.24" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="220.98" y1="10.16" x2="218.44" y2="10.16" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
-<wire x1="152.4" y1="-15.24" x2="154.94" y2="-15.24" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<junction x="152.4" y="-15.24" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="220.98" y1="10.16" x2="223.52" y2="10.16" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<junction x="220.98" y="10.16" grouprefs="MANUAL_OVERRIDE"/>
 </segment>
 </net>
 <net name="5V" class="0">
@@ -21987,8 +21979,8 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="7.62" y1="111.76" x2="0" y2="111.76" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="0" y="111.76" size="1.778" layer="95" grouprefs="MCU"/>
+<wire x1="7.62" y1="111.76" x2="-2.54" y2="111.76" width="0.1524" layer="91" grouprefs="MCU"/>
+<label x="-2.54" y="111.76" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 <segment>
 <label x="200.66" y="55.88" size="1.778" layer="95" grouprefs="DEBUG_INTERFACE"/>
@@ -22017,9 +22009,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="C8" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="73.66" x2="25.4" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
 <wire x1="25.4" y1="73.66" x2="25.4" y2="76.2" width="0.1524" layer="91" grouprefs="MCU"/>
-<wire x1="15.24" y1="73.66" x2="10.16" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
+<wire x1="15.24" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
 <junction x="15.24" y="73.66" grouprefs="MCU"/>
-<label x="10.16" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
+<label x="5.08" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
 <net name="CUPSENSOR" class="0">
@@ -22064,7 +22056,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="165.1" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="152.4" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
@@ -22072,7 +22064,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="170.18" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="154.94" y="53.34" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
@@ -22180,12 +22172,12 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="S2" gate="1" pin="P"/>
 <pinref part="S2" gate="1" pin="P1"/>
-<wire x1="137.16" y1="-12.7" x2="139.7" y2="-12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<wire x1="139.7" y1="-15.24" x2="137.16" y2="-15.24" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<wire x1="137.16" y1="-15.24" x2="137.16" y2="-12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<wire x1="137.16" y1="-15.24" x2="111.76" y2="-15.24" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
-<junction x="137.16" y="-15.24" grouprefs="MANUAL_OVERRIDE"/>
-<label x="111.76" y="-15.24" size="1.778" layer="95" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="205.74" y1="12.7" x2="208.28" y2="12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="208.28" y1="10.16" x2="205.74" y2="10.16" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="205.74" y1="10.16" x2="205.74" y2="12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<wire x1="205.74" y1="10.16" x2="180.34" y2="10.16" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
+<junction x="205.74" y="10.16" grouprefs="MANUAL_OVERRIDE"/>
+<label x="180.34" y="10.16" size="1.778" layer="95" grouprefs="MANUAL_OVERRIDE"/>
 </segment>
 </net>
 <net name="PUMP_VODKA" class="0">
@@ -22309,19 +22301,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="104,1,25.4,48.26,IC2,VCC,5V,,,"/>
-<approved hash="104,1,25.4,73.66,IC2,AVCC,5V,,,"/>
-<approved hash="113,1,187.96,100.583,X2,,,,,"/>
-<approved hash="113,1,141.937,49.6976,LED1,,,,,"/>
-<approved hash="113,1,151.13,53.6617,LED2,,,,,"/>
-<approved hash="113,1,158.75,56.2017,LED3,,,,,"/>
-<approved hash="113,1,162.602,3.52044,SV1,,,,,"/>
-<approved hash="113,1,141.021,96.52,T1,,,,,"/>
-<approved hash="113,1,148.641,88.9,T2,,,,,"/>
-<approved hash="113,1,156.261,81.28,T3,,,,,"/>
-<approved hash="113,1,68.58,3.51536,S2,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
