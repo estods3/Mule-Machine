@@ -28,17 +28,17 @@ const int pump_Lime =  A3; //PC3,A3, physical pin 26
 
 //TODO HARDWARE: MM1.2, change to use real PWM not SoftPWM Lib
 ////inputs
-//const int cup_present_buttonPin = 5; //PD5, physical pin 11                 
-//const int manual_override_button_pin = 6; //PD6, physical pin 12
+//const int cup_present_buttonPin = 4; //PD4, physical pin 6                 
+//const int manual_override_button_pin = 7; //PD7, physical pin 13
 //const int tuner_strength_pin = A4; //PC4, physical pin 27
 //const int tuner_sour_pin = A5; //PC5, physical pin 28
-////outputs
-//const int ledGreen_Lime = 2; // PD2, physical pin 4
+////outputs (PWM)
+//const int ledGreen_Lime = 5; // PD5, physical pin 11
 //const int ledYellow_GingerBeer = 3; // PD3, physical pin 5
-//const int ledOrange_Vodka = 4; // PD4, physical pin 6
-//const int pump_Vodka = A1; //PC1,A1, physical pin 24
-//const int pump_GingerBeer = A2; //PC2,A2, physical pin 25
-//const int pump_Lime =  A3; //PC3,A3, physical pin 26
+//const int ledOrange_Vodka = 6; // PD6, physical pin 12
+//const int pump_Vodka = 9; //PB1, physical pin 15
+//const int pump_GingerBeer = 10; //PB2, physical pin 16
+//const int pump_Lime =  11; //PB3, physical pin 17
 
 //ANIMATION DELAYS
 //Bootup, Standby Mode, Mixing Mode
