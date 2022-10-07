@@ -1,0 +1,20 @@
+Partlist exported from /home/estods/Documents/projects/MuleMachine/mule_machine/HW/pcb/mulemachinePCB_withLEDs.sch at 9/21/22 7:23 PM
+
+Qty Value     Device              Package  Parts            Description                                                   MF MPN      OC_FARNELL OC_NEWARK POPULARITY SPICEPREFIX
+1             10-XX               B3F-10XX S2               OMRON SWITCH                                                     B3F-1000 176432     36M3542   72                    
+3             2N4401-NPN-TO92-EBC TO92-EBC T1, T2, T3       NPN Transistror                                                                                0                     
+1             F09HP               F09HP    X2               SUB-D                                                                     unknown    unknown   2                     
+1             FE05-1              FE05-1   SV1              FEMALE HEADER                                                             unknown    unknown   7                     
+3             LED5MM              LED5MM   LED1, LED2, LED3 LED                                                                                            93                    
+4   0.1uF     C2,5-3              C2.5-3   C1, C5, C7, C8   CAPACITOR                                                                                      38                    
+1   10k       R-US_0207/10        0207/10  R7               RESISTOR, American symbol                                                                      36         R          
+3   150R      R-US_0411/12        0411/12  R1, R2, R3       RESISTOR, American symbol                                                                      0          R          
+1   16Mhz     XTAL/S              QS       Q1               CRYSTAL                                                                                        59                    
+3   1N4004    1N4004              DO41-10  D1, D2, D3       DIODE                                                                                          82                    
+3   200R      R-US_0411/12        0411/12  R4, R5, R6       RESISTOR, American symbol                                                                      0          R          
+2   22pF      C2,5-3              C2.5-3   C2, C3           CAPACITOR                                                                                      38                    
+2   470uF     CPOL-USE2.5-6       E2,5-6   C4, C6           POLARIZED CAPACITOR, American symbol                                                           14         C          
+1   DCJ0202   DCJ0202             DCJ0202  J1               DC POWER JACK                                                             unknown    unknown   17                    
+1   LD117AV50 LD117AV50           TO220L1  IC1              Low drop fixed and adjustable positive voltage regulators 1 A                                  0                     
+1   MEGA8-P   MEGA8-P             DIL28-3  IC2              MICROCONTROLLER                                                           unknown    unknown   17                    
+2   US-EVUF3L US-EVUF3L           EVUFXL   R10, R11         9 mm Square Rotary Potentiometers                                                              0                     
