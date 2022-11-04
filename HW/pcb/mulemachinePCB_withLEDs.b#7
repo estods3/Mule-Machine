@@ -2751,27 +2751,27 @@ design rules under a new name.</description>
 <wire x1="9.525" y1="11.43" x2="9.8806" y2="10.8712" width="0.3048" layer="1"/>
 </signal>
 <signal name="PUMP_VODKA">
-<contactref element="IC2" pad="24"/>
 <contactref element="R1" pad="1"/>
 <wire x1="33.02" y1="43.18" x2="30.48" y2="40.64" width="0.3048" layer="1"/>
 <wire x1="34.925" y1="43.18" x2="33.02" y2="43.18" width="0.3048" layer="1"/>
-<wire x1="30.48" y1="40.64" x2="30.353" y2="40.64" width="0.3048" layer="1"/>
+<contactref element="IC2" pad="15"/>
+<wire x1="30.353" y1="17.78" x2="30.48" y2="40.64" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PUMP_GB">
-<contactref element="IC2" pad="25"/>
 <contactref element="R2" pad="1"/>
 <wire x1="33.02" y1="45.72" x2="30.48" y2="43.18" width="0.3048" layer="1"/>
 <wire x1="33.02" y1="46.99" x2="33.02" y2="45.72" width="0.3048" layer="1"/>
 <wire x1="33.655" y1="47.625" x2="33.02" y2="46.99" width="0.3048" layer="1"/>
 <wire x1="34.925" y1="47.625" x2="33.655" y2="47.625" width="0.3048" layer="1"/>
-<wire x1="30.48" y1="43.18" x2="30.353" y2="43.18" width="0.3048" layer="1"/>
+<contactref element="IC2" pad="16"/>
+<wire x1="30.353" y1="20.32" x2="30.48" y2="43.18" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PUMP_LIME">
-<contactref element="IC2" pad="26"/>
 <contactref element="R3" pad="1"/>
 <wire x1="34.925" y1="50.165" x2="30.48" y2="45.72" width="0.3048" layer="1"/>
 <wire x1="34.925" y1="52.07" x2="34.925" y2="50.165" width="0.3048" layer="1"/>
-<wire x1="30.48" y1="45.72" x2="30.353" y2="45.72" width="0.3048" layer="1"/>
+<contactref element="IC2" pad="17"/>
+<wire x1="30.353" y1="22.86" x2="30.48" y2="45.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PUMP_LIME_VCC" class="1">
 <contactref element="T3" pad="C"/>
@@ -2862,6 +2862,12 @@ design rules under a new name.</description>
 <wire x1="24.765" y1="12.573" x2="24.765" y2="13.97" width="0.3048" layer="16"/>
 <contactref element="IC2" pad="12"/>
 <wire x1="24.765" y1="12.573" x2="22.733" y2="22.86" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="IC2" pad="13"/>
+</signal>
+<signal name="N$7">
+<contactref element="IC2" pad="6"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

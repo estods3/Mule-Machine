@@ -69,7 +69,7 @@
 <hole x="66.04" y="19.05" drill="2.99999375"/>
 <hole x="66.04" y="52.07" drill="2.99999375"/>
 <text x="60.96" y="25.4" size="1.778" layer="22" rot="MR0">G</text>
-<text x="35.56" y="25.4" size="1.778" layer="22" rot="MR0">Y</text>
+<text x="34.29" y="25.4" size="1.778" layer="22" rot="MR0">Y</text>
 <text x="10.16" y="25.4" size="1.778" layer="22" rot="MR0">O</text>
 <circle x="66.04" y="19.05" radius="2.83980625" width="0.1524" layer="21"/>
 <circle x="66.04" y="52.07" radius="2.83980625" width="0.1524" layer="21"/>
