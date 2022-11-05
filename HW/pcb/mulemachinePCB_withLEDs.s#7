@@ -21852,7 +21852,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="271.78" y1="109.22" x2="271.78" y2="106.68" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <pinref part="SUPPLY3" gate="GND" pin="GND"/>
 <pinref part="J1" gate="G$1" pin="2"/>
@@ -22216,7 +22216,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="111.76" y="81.28" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
 </net>
-<net name="PUMP_LIME_VCC" class="0">
+<net name="PUMP_LIME_VCC" class="1">
 <segment>
 <pinref part="T3" gate="G$1" pin="C"/>
 <wire x1="147.32" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22231,7 +22231,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="309.88" y="96.52" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_GB_VCC" class="0">
+<net name="PUMP_GB_VCC" class="1">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="172.72" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22247,7 +22247,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="231.14" y="93.98" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_VODKA_VCC" class="0">
+<net name="PUMP_VODKA_VCC" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="195.58" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22257,7 +22257,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <pinref part="X2" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="104.14" x2="269.24" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="269.24" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR PUMP_CONNECTOR"/>
+<wire x1="269.24" y1="104.14" x2="231.14" y2="104.14" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <junction x="269.24" y="104.14" grouprefs="PUMP_CONNECTOR"/>
 <label x="231.14" y="104.14" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
