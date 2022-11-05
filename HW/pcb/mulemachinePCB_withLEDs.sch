@@ -21653,17 +21653,17 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <attribute name="NAME" x="140.97" y="82.7786" size="1.778" layer="95"/>
 <attribute name="VALUE" x="140.97" y="77.978" size="1.778" layer="96"/>
 </instance>
-<instance part="R4" gate="G$1" x="134.62" y="50.8" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="128.27" y="47.2186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="47.498" size="1.778" layer="96"/>
+<instance part="R4" gate="G$1" x="142.24" y="50.8" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="NAME" x="135.89" y="47.2186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="140.97" y="47.498" size="1.778" layer="96"/>
 </instance>
-<instance part="R5" gate="G$1" x="142.24" y="53.34" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="135.89" y="52.2986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="146.05" y="52.578" size="1.778" layer="96"/>
+<instance part="R5" gate="G$1" x="147.32" y="53.34" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="NAME" x="140.97" y="52.2986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="151.13" y="52.578" size="1.778" layer="96"/>
 </instance>
-<instance part="R6" gate="G$1" x="149.86" y="55.88" smashed="yes" grouprefs="USER_INTERFACE">
-<attribute name="NAME" x="143.51" y="57.3786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="148.59" y="57.658" size="1.778" layer="96"/>
+<instance part="R6" gate="G$1" x="152.4" y="55.88" smashed="yes" grouprefs="USER_INTERFACE">
+<attribute name="NAME" x="146.05" y="57.3786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="151.13" y="57.658" size="1.778" layer="96"/>
 </instance>
 <instance part="IC1" gate="G$1" x="-40.64" y="109.22" smashed="yes" grouprefs="12VTO5V">
 <attribute name="NAME" x="-45.72" y="114.3" size="1.778" layer="95"/>
@@ -22055,7 +22055,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="165.1" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="165.1" y1="50.8" x2="147.32" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="152.4" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
@@ -22063,16 +22063,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <segment>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="53.34" x2="147.32" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
-<label x="154.94" y="53.34" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
+<wire x1="170.18" y1="53.34" x2="152.4" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<label x="157.48" y="53.34" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
 <net name="GREEN" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<wire x1="154.94" y1="55.88" x2="175.26" y2="55.88" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
-<label x="157.48" y="55.88" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
+<wire x1="157.48" y1="55.88" x2="175.26" y2="55.88" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<label x="165.1" y="55.88" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -22263,7 +22263,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <net name="LED_GREEN_PWM" class="0">
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="55.88" x2="144.78" y2="55.88" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="111.76" y1="55.88" x2="147.32" y2="55.88" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="111.76" y="55.88" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
@@ -22275,7 +22275,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <net name="LED_YELLOW_PWM" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="53.34" x2="137.16" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<wire x1="111.76" y1="53.34" x2="142.24" y2="53.34" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
 <label x="111.76" y="53.34" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
@@ -22284,18 +22284,16 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="76.2" y="81.28" size="1.778" layer="95" grouprefs="MCU"/>
 </segment>
 </net>
-<net name="LED_ORANGE" class="0">
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="111.76" y1="50.8" x2="129.54" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
-<label x="111.76" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
-</segment>
-</net>
 <net name="LED_ORANGE_PWM" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
 <wire x1="73.66" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
 <label x="76.2" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="111.76" y1="50.8" x2="137.16" y2="50.8" width="0.1524" layer="91" grouprefs="USER_INTERFACE"/>
+<label x="111.76" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 </net>
 </nets>

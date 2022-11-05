@@ -22022,11 +22022,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <wire x1="292.1" y1="109.22" x2="330.835" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_CONNECTOR"/>
 <label x="314.96" y="109.22" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
-<segment>
-<wire x1="73.66" y1="76.2" x2="94.615" y2="76.2" width="0.1524" layer="91" grouprefs="MCU"/>
-<pinref part="IC2" gate="G$1" pin="PD5(T1)"/>
-<label x="78.74" y="76.2" size="1.778" layer="95" grouprefs="MCU"/>
-</segment>
 </net>
 <net name="N$12" class="0">
 <segment>
@@ -22165,11 +22160,6 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 </net>
 <net name="MANUALOVERRIDE" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
-<wire x1="73.66" y1="73.66" x2="101.6" y2="73.66" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="73.66" size="1.778" layer="95" grouprefs="MCU"/>
-</segment>
-<segment>
 <pinref part="S2" gate="1" pin="P"/>
 <pinref part="S2" gate="1" pin="P1"/>
 <wire x1="205.74" y1="12.7" x2="208.28" y2="12.7" width="0.1524" layer="91" grouprefs="MANUAL_OVERRIDE"/>
@@ -22216,7 +22206,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="111.76" y="81.28" size="1.778" layer="95" grouprefs="PUMP_DRIVERS"/>
 </segment>
 </net>
-<net name="PUMP_LIME_VCC" class="0">
+<net name="PUMP_LIME_VCC" class="1">
 <segment>
 <pinref part="T3" gate="G$1" pin="C"/>
 <wire x1="147.32" y1="86.36" x2="167.64" y2="86.36" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22231,7 +22221,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="309.88" y="96.52" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_GB_VCC" class="0">
+<net name="PUMP_GB_VCC" class="1">
 <segment>
 <pinref part="T2" gate="G$1" pin="C"/>
 <wire x1="172.72" y1="99.06" x2="190.5" y2="99.06" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22247,7 +22237,7 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="231.14" y="93.98" size="1.778" layer="95" grouprefs="PUMP_CONNECTOR"/>
 </segment>
 </net>
-<net name="PUMP_VODKA_VCC" class="0">
+<net name="PUMP_VODKA_VCC" class="1">
 <segment>
 <pinref part="T1" gate="G$1" pin="C"/>
 <wire x1="195.58" y1="109.22" x2="220.98" y2="109.22" width="0.1524" layer="91" grouprefs="PUMP_DRIVERS"/>
@@ -22269,9 +22259,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="111.76" y="55.88" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD2(INT0)"/>
-<wire x1="73.66" y1="83.82" x2="93.98" y2="83.82" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="83.82" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD5(T1)"/>
+<wire x1="73.66" y1="76.2" x2="96.52" y2="76.2" width="0.1524" layer="91"/>
+<label x="78.74" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LED_YELLOW" class="0">
@@ -22293,9 +22283,9 @@ http://www.ee.siue.edu/~alozows/library/datasheets/BFR96.pdf</description>
 <label x="111.76" y="50.8" size="1.778" layer="95" grouprefs="USER_INTERFACE"/>
 </segment>
 <segment>
-<pinref part="IC2" gate="G$1" pin="PD4(XCK/T0)"/>
-<wire x1="73.66" y1="78.74" x2="96.52" y2="78.74" width="0.1524" layer="91" grouprefs="MCU"/>
-<label x="78.74" y="78.74" size="1.778" layer="95" grouprefs="MCU"/>
+<pinref part="IC2" gate="G$1" pin="PD6(AIN0)"/>
+<wire x1="73.66" y1="73.66" x2="96.52" y2="73.66" width="0.1524" layer="91"/>
+<label x="78.74" y="73.66" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
