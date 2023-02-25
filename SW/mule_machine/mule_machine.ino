@@ -1,5 +1,5 @@
-#include <SoftPWM.h>
-#include <SoftPWM_timer.h>
+//#include <SoftPWM.h>
+//#include <SoftPWM_timer.h>
 
 /*
  Mule Machine
@@ -14,31 +14,31 @@
 //Buttons, LEDs, Pumps
 //HARDWARE: <MM1.1
 //inputs
-const int cup_present_buttonPin = 5; //PD5, physical pin 11                 
-const int manual_override_button_pin = 6; //PD6, physical pin 12
-const int tuner_strength_pin = A4; //PC4, physical pin 27
-const int tuner_sour_pin = A5; //PC5, physical pin 28
-//outputs
-const int ledGreen_Lime = 2; // PD2, physical pin 4
-const int ledYellow_GingerBeer = 3; // PD3, physical pin 5
-const int ledOrange_Vodka = 4; // PD4, physical pin 6
-const int pump_Vodka = A1; //PC1,A1, physical pin 24
-const int pump_GingerBeer = A2; //PC2,A2, physical pin 25
-const int pump_Lime =  A3; //PC3,A3, physical pin 26
-
-//TODO HARDWARE: MM1.2, change to use real PWM not SoftPWM Lib
-////inputs
-//const int cup_present_buttonPin = 4; //PD4, physical pin 6                 
-//const int manual_override_button_pin = 7; //PD7, physical pin 13
+//const int cup_present_buttonPin = 5; //PD5, physical pin 11                 
+//const int manual_override_button_pin = 6; //PD6, physical pin 12
 //const int tuner_strength_pin = A4; //PC4, physical pin 27
 //const int tuner_sour_pin = A5; //PC5, physical pin 28
-////outputs (PWM)
-//const int ledGreen_Lime = 5; // PD5, physical pin 11
+////outputs
+//const int ledGreen_Lime = 2; // PD2, physical pin 4
 //const int ledYellow_GingerBeer = 3; // PD3, physical pin 5
-//const int ledOrange_Vodka = 6; // PD6, physical pin 12
-//const int pump_Vodka = 9; //PB1, physical pin 15
-//const int pump_GingerBeer = 10; //PB2, physical pin 16
-//const int pump_Lime =  11; //PB3, physical pin 17
+//const int ledOrange_Vodka = 4; // PD4, physical pin 6
+//const int pump_Vodka = A1; //PC1,A1, physical pin 24
+//const int pump_GingerBeer = A2; //PC2,A2, physical pin 25
+//const int pump_Lime =  A3; //PC3,A3, physical pin 26
+
+//TODO HARDWARE: MM1.2, change to use real PWM not SoftPWM Lib
+//inputs
+const int cup_present_buttonPin = 4; //PD4, physical pin 6                 
+const int manual_override_button_pin = 7; //PD7, physical pin 13
+const int tuner_strength_pin = A4; //PC4, physical pin 27
+const int tuner_sour_pin = A5; //PC5, physical pin 28
+//outputs (PWM)
+const int ledGreen_Lime = 5; // PD5, physical pin 11
+const int ledYellow_GingerBeer = 3; // PD3, physical pin 5
+const int ledOrange_Vodka = 6; // PD6, physical pin 12
+const int pump_Vodka = 9; //PB1, physical pin 15
+const int pump_GingerBeer = 10; //PB2, physical pin 16
+const int pump_Lime =  11; //PB3, physical pin 17
 
 //ANIMATION DELAYS
 //Bootup, Standby Mode, Mixing Mode
@@ -94,7 +94,10 @@ void setup() {
   pinMode(ledOrange_Vodka, OUTPUT);
   pinMode(ledYellow_GingerBeer, OUTPUT);
   pinMode(ledGreen_Lime, OUTPUT);
-
+  //MMv1.2+
+  pinMode(pump_Vodka, OUTPUT);
+  pinMode(pump_GingerBeer, OUTPUT);
+  pinMode(pump_Lime, OUTPUT);
   // Initialize calibration variables and get initial readings
   readings_strength[numReadings] = {};
   readings_sour[numReadings] = {};
@@ -103,14 +106,15 @@ void setup() {
   update_calibration_from_user_settings();
 
   // Initialize PWM Interface for LEDs and Pumps
-  SoftPWMBegin();
-  SoftPWMSet(pump_Vodka, 0);
-  SoftPWMSet(pump_GingerBeer, 0);
-  SoftPWMSet(pump_Lime, 0);
-  SoftPWMSet(ledOrange_Vodka, 0);
-  SoftPWMSet(ledYellow_GingerBeer, 0);
-  SoftPWMSet(ledGreen_Lime, 0);
-  SoftPWMSetFadeTime(ALL, 0, 0);
+  //MMv1.1
+  //SoftPWMBegin();
+  //SoftPWMSet(pump_Vodka, 0);
+  //SoftPWMSet(pump_GingerBeer, 0);
+  //SoftPWMSet(pump_Lime, 0);
+  //SoftPWMSet(ledOrange_Vodka, 0);
+  //SoftPWMSet(ledYellow_GingerBeer, 0);
+  //SoftPWMSet(ledGreen_Lime, 0);
+  //SoftPWMSetFadeTime(ALL, 0, 0);
 
   // Initial Digital Inputs as OFF (false)
   cup_is_present = false;
@@ -169,21 +173,35 @@ void loop() {
            
            // START MIXING DRINK
            // Start by switching all pumps to "ON". 
+           
            // use a current_spike_delay to prevent the current from spiking all at once 
            // and resetting the Arduino.
-           SoftPWMSetPercent(ledYellow_GingerBeer, calibration_percentage_GingerBeer);
-           SoftPWMSetPercent(pump_GingerBeer, calibration_percentage_GingerBeer);
+           
+           //MMv1.1
+           //SoftPWMSetPercent(ledYellow_GingerBeer, calibration_percentage_GingerBeer);
+           //SoftPWMSetPercent(pump_GingerBeer, calibration_percentage_GingerBeer);
+           //MMv1.2+
+           analogWrite(ledYellow_GingerBeer, int((calibration_percentage_GingerBeer / 100.0) * 255));
+           analogWrite(pump_GingerBeer, int((calibration_percentage_GingerBeer / 100.0) * 255));
+           
            // PWM Vodka Pump (Speed Controlled by User)
            delay(current_spike_delay);
-           //digitalWrite(ledOrange_Vodka, HIGH);
-           SoftPWMSetPercent(ledOrange_Vodka, calibration_percentage_Vodka);
-           SoftPWMSetPercent(pump_Vodka, calibration_percentage_Vodka);
+           //MMv1.1
+           //SoftPWMSetPercent(ledOrange_Vodka, calibration_percentage_Vodka);
+           //SoftPWMSetPercent(pump_Vodka, calibration_percentage_Vodka);
+           //MMv1.2+
+           analogWrite(ledOrange_Vodka, int((calibration_percentage_Vodka / 100.0) * 255));
+           analogWrite(pump_Vodka, int((calibration_percentage_Vodka / 100.0) * 255));
+           
            // PWM Lime Pump (Speed Controlled by User)
-           delay(current_spike_delay);           
-           //digitalWrite(ledGreen_Lime, HIGH);
-           SoftPWMSetPercent(ledGreen_Lime, calibration_percentage_Lime);
-           SoftPWMSetPercent(pump_Lime, calibration_percentage_Lime);
-       
+           delay(current_spike_delay);
+           //MMv1.1
+           //SoftPWMSetPercent(ledGreen_Lime, calibration_percentage_Lime);
+           //SoftPWMSetPercent(pump_Lime, calibration_percentage_Lime);
+           //MMv1.2+
+           analogWrite(ledGreen_Lime, int((calibration_percentage_Lime / 100.0) * 255));
+           analogWrite(pump_Lime, int((calibration_percentage_Lime / 100.0) * 255));
+           
            time_passed_ginger_beer_start = 2*current_spike_delay;
            if((pour_duration_per_cycle - time_passed_ginger_beer_start) > 0){
                delay(pour_duration_per_cycle - time_passed_ginger_beer_start);
@@ -193,7 +211,12 @@ void loop() {
            cup_is_present = digitalRead(cup_present_buttonPin) == LOW;
            manual_override = digitalRead(manual_override_button_pin) == LOW;
        }
-       SoftPWMSetPercent(ALL, 0);
+       //MMv1.2+
+       analogWrite(pump_GingerBeer, int(0));
+       analogWrite(pump_Vodka, int(0));
+       analogWrite(pump_Lime, int(0));
+       //MMv1.1
+       //SoftPWMSetPercent(ALL, 0);
   }
 }
 
@@ -253,7 +276,7 @@ void update_calibration_from_user_settings(){
 int smooth_sour() { /* function smooth */
   // read the sensor into the next position in the array
   temp_analog_reading = analogRead(tuner_sour_pin);
-  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2*nominal_setting_lime, 0);
+  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2.5*nominal_setting_lime, 0);
   readings_sour[readIndex_sour] = temp_mapped_analog_reading;
   readIndex_sour = readIndex_sour + 1;
   if (readIndex_sour >= numReadings) {
