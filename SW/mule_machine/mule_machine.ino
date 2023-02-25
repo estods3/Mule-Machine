@@ -94,7 +94,10 @@ void setup() {
   pinMode(ledOrange_Vodka, OUTPUT);
   pinMode(ledYellow_GingerBeer, OUTPUT);
   pinMode(ledGreen_Lime, OUTPUT);
-
+  //MMv1.2+
+  pinMode(pump_Vodka, OUTPUT);
+  pinMode(pump_GingerBeer, OUTPUT);
+  pinMode(pump_Lime, OUTPUT);
   // Initialize calibration variables and get initial readings
   readings_strength[numReadings] = {};
   readings_sour[numReadings] = {};
@@ -103,7 +106,7 @@ void setup() {
   update_calibration_from_user_settings();
 
   // Initialize PWM Interface for LEDs and Pumps
-  // TODO - use for Cal 1.1
+  //MMv1.1
   //SoftPWMBegin();
   //SoftPWMSet(pump_Vodka, 0);
   //SoftPWMSet(pump_GingerBeer, 0);
@@ -170,26 +173,35 @@ void loop() {
            
            // START MIXING DRINK
            // Start by switching all pumps to "ON". 
+           
            // use a current_spike_delay to prevent the current from spiking all at once 
            // and resetting the Arduino.
+           
+           //MMv1.1
            //SoftPWMSetPercent(ledYellow_GingerBeer, calibration_percentage_GingerBeer);
            //SoftPWMSetPercent(pump_GingerBeer, calibration_percentage_GingerBeer);
+           //MMv1.2+
            analogWrite(ledYellow_GingerBeer, int((calibration_percentage_GingerBeer / 100.0) * 255));
            analogWrite(pump_GingerBeer, int((calibration_percentage_GingerBeer / 100.0) * 255));
+           
            // PWM Vodka Pump (Speed Controlled by User)
            delay(current_spike_delay);
-           //digitalWrite(ledOrange_Vodka, HIGH);
+           //MMv1.1
            //SoftPWMSetPercent(ledOrange_Vodka, calibration_percentage_Vodka);
            //SoftPWMSetPercent(pump_Vodka, calibration_percentage_Vodka);
+           //MMv1.2+
            analogWrite(ledOrange_Vodka, int((calibration_percentage_Vodka / 100.0) * 255));
            analogWrite(pump_Vodka, int((calibration_percentage_Vodka / 100.0) * 255));
+           
            // PWM Lime Pump (Speed Controlled by User)
-           delay(current_spike_delay);           
-           //digitalWrite(ledGreen_Lime, HIGH);
+           delay(current_spike_delay);
+           //MMv1.1
            //SoftPWMSetPercent(ledGreen_Lime, calibration_percentage_Lime);
            //SoftPWMSetPercent(pump_Lime, calibration_percentage_Lime);
+           //MMv1.2+
            analogWrite(ledGreen_Lime, int((calibration_percentage_Lime / 100.0) * 255));
            analogWrite(pump_Lime, int((calibration_percentage_Lime / 100.0) * 255));
+           
            time_passed_ginger_beer_start = 2*current_spike_delay;
            if((pour_duration_per_cycle - time_passed_ginger_beer_start) > 0){
                delay(pour_duration_per_cycle - time_passed_ginger_beer_start);
@@ -199,6 +211,11 @@ void loop() {
            cup_is_present = digitalRead(cup_present_buttonPin) == LOW;
            manual_override = digitalRead(manual_override_button_pin) == LOW;
        }
+       //MMv1.2+
+       analogWrite(pump_GingerBeer, int(0));
+       analogWrite(pump_Vodka, int(0));
+       analogWrite(pump_Lime, int(0));
+       //MMv1.1
        //SoftPWMSetPercent(ALL, 0);
   }
 }
