@@ -279,10 +279,10 @@ void update_calibration_from_user_settings(){
 int smooth_sour() { /* function smooth */
   // read the sensor into the next position in the array
   temp_analog_reading = analogRead(tuner_sour_pin);
-  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2.5*nominal_setting_lime, 0);
-  if(temp_mapped_analog_reading < motor_deadzone) {
-    temp_mapped_analog_reading = 0;
+  if(temp_analog_reading < motor_deadzone) {
+    temp_analog_reading = 0;
   }
+  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2.5*nominal_setting_lime, 0);
   readings_sour[readIndex_sour] = temp_mapped_analog_reading;
   readIndex_sour = readIndex_sour + 1;
   if (readIndex_sour >= numReadings) {
@@ -307,10 +307,10 @@ int smooth_sour() { /* function smooth */
 int smooth_strength() { /* function smooth */
   // read the sensor into the next position in the array
   temp_analog_reading = analogRead(tuner_strength_pin);
-  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2*nominal_setting_vodka, 0);
-  if(temp_mapped_analog_reading < motor_deadzone) {
-    temp_mapped_analog_reading = 0;
+  if(temp_analog_reading < motor_deadzone) {
+    temp_analog_reading = 0;
   }
+  temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2*nominal_setting_vodka, 0);
   readings_strength[readIndex_strength] = temp_mapped_analog_reading;
   readIndex_strength = readIndex_strength + 1;
   if (readIndex_strength >= numReadings) {
