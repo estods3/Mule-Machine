@@ -50,6 +50,9 @@ const int mixingmode_starting_blink_duration = 100;
 //PUMP CURRENT SPIKE DELAY
 // prevent pumps drawing too much current from Arduino when turning on all at once.
 const int current_spike_delay = 25;
+// Number of motors: 3 (1 GB, 1 Lime, 1 Vodka) 4, (2 GB, 1 Lime, 1 Vodka)
+const int num_motors = 4;
+const int motor_deadzone = 200; // bottom !quarter of potentiometer results in PWM that isnt strong enought to rotate motors.
 
 // MIXING MODE CALIBRATION
 bool cup_is_present;
@@ -57,13 +60,13 @@ bool manual_override;
 const int pour_duration_per_cycle = 150*4; //ms.
 
 // Nominal Recipe
-// 0.5 Cups per serving GB--> 2/3rd (100, so GB pump runs at 100%) of Drink should be Ginger Beer
-// 0.0625 Cups per serving Lime --> Of remaining 1/3 (50 = 1/3 * 100), 1/4 (0.25) should be Lime
-// 0.1875 Cups per serving Vodka --> Of remaining 1/3 (50 = 1/3 * 100), 3/4 (0.75) should be Vodka
+// 0.5 Cups per serving GB--> 2/3rd (let 2/3 = 100, so GB pump runs at 100%) of Drink should be Ginger Beer
+// 0.0625 Cups per serving Lime --> Of remaining 1/3 (if 2/3 = 100, then 1/3 = 50), 1/4 (0.25) should be Lime
+// 0.1875 Cups per serving Vodka --> Of remaining 1/3 (if 2/3 = 100, then 1/3 = 50), 3/4 (0.75) should be Vodka
 // -----------------------------------------------------------------------
 const int nominal_setting_ginger_beer = 100; //100%
-const int nominal_setting_lime = (50) * 0.25; //37.5%
-const int nominal_setting_vodka = (50) * 0.75; //12.5%
+const int nominal_setting_lime = (50) * 0.25 * (num_motors-2); //12.5%, if num_motors = 4, then double lime setting
+const int nominal_setting_vodka = (50) * 0.75 * (num_motors-2); //37.5%, if num_motors = 4, then double vodka setting
 
 int temp_analog_reading;
 int temp_mapped_analog_reading;
@@ -245,7 +248,7 @@ void update_calibration_from_user_settings(){
     calibration_percentage_Vodka = smooth_strength();
     calibration_percentage_Lime = smooth_sour();
   }
-  calibration_percentage_GingerBeer = 150 - calibration_percentage_Vodka - calibration_percentage_Lime;
+  calibration_percentage_GingerBeer = 100; //133 - calibration_percentage_Vodka - calibration_percentage_Lime;
   
   //Error Checking
   if(calibration_percentage_GingerBeer > 100){
@@ -276,6 +279,9 @@ void update_calibration_from_user_settings(){
 int smooth_sour() { /* function smooth */
   // read the sensor into the next position in the array
   temp_analog_reading = analogRead(tuner_sour_pin);
+  if(temp_analog_reading < motor_deadzone) {
+    temp_analog_reading = 0;
+  }
   temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2.5*nominal_setting_lime, 0);
   readings_sour[readIndex_sour] = temp_mapped_analog_reading;
   readIndex_sour = readIndex_sour + 1;
@@ -301,6 +307,9 @@ int smooth_sour() { /* function smooth */
 int smooth_strength() { /* function smooth */
   // read the sensor into the next position in the array
   temp_analog_reading = analogRead(tuner_strength_pin);
+  if(temp_analog_reading < motor_deadzone) {
+    temp_analog_reading = 0;
+  }
   temp_mapped_analog_reading = map(temp_analog_reading, 0, 1023, 2*nominal_setting_vodka, 0);
   readings_strength[readIndex_strength] = temp_mapped_analog_reading;
   readIndex_strength = readIndex_strength + 1;
